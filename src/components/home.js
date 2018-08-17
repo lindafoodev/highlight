@@ -7,7 +7,7 @@ export default class Home extends React.Component {
 
   render(){
       return (
-          <div className='main'>
+          <div className='main custom'>
             <div className='box'>
                 <div className='column'>
                     <div className='hidden-on-mobile box-container theme-color-1 col-4'>
@@ -52,7 +52,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <div id='openModal-registry' className='modalDialog openModal-registry-style'>
+            <div id='openModal-registry' className='modalDialog'>
                 <div className='theme-color-1'>
                     <a href='#close' title='Close' className='close'>X</a>
                     <h2 className='style-text'>Registry</h2>
@@ -60,11 +60,29 @@ export default class Home extends React.Component {
                         <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>
                             <img clasName='logo' height='auto' width='112' src={amazon} alt='Amazon Registry logo'/>
                         </a>
-                        <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='BuyBuy Baby Registry'>
+                        <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>
                             <img className='logo' src={bbb} alt='BuyBuy Baby Registry logo'/>
                         </a>
                     </div>
-                    <p>Shiwani and Animesh are registered at Amazon and buybuy Baby.</p>
+                    <p>Shiwani and Animesh are registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> & <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
+                </div>
+            </div>
+            <div id='openModal-eventDetails' className='modalDialog'>
+                <div className='theme-color-3'>
+                    <a href='#close' title='Close' className='close'>X</a>
+                    <p className='section-text'>Please join us for a</p>
+                    <p className='break-text style-text higher-emphasis'>Baby Shower</p>
+                    <p className='break-text'>honoring</p>
+                    <p className='break-text style-text'>Shiwani & Animesh</p>
+                    <p className='break-text'>Sunday, September 16, 2018</p>
+                    <p className='section-text'>2:00pm to 6:00pm</p>
+                    <p className='break-text higher-emphasis'>Clubhouse</p>
+                    <p className='section-text higher-emphasis'>550 Moreland Way</p>
+                    <p className='section-text higher-emphasis'>Santa Clara, Ca 95054</p>
+                    <p className='section-text break-text'>Hosted by Olivia & Linda</p>
+                    <p className='section-text'>Regrets only to Linda</p>
+                    <p className='section-text'>713.822.4934</p>
+                    <p className='break-text'>Registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> & <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
                 </div>
             </div>
           </div>  

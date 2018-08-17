@@ -19,6 +19,22 @@ body {
     #fff 40px); /*color, stop - second half of gradient */
 }
 
+.custom {
+  cursor: url()
+}
+
+.theme-color-1 {
+  background-color: #baffc9
+}
+
+.theme-color-2 {
+  background-color: #ffb246
+}
+
+.theme-color-3 {
+  background-color: #bae1ff
+}
+
 .box {
   display: flex;
   display: -webkit-box;
@@ -84,16 +100,7 @@ body {
   opacity: 1;
 }
 
-.style-text {
-  font-family: 'Dancing Script', cursive;
-  color: black;
-  font-size: 32px;
-  text-shadow:
-		-1px -1px 0 #fff,
-		1px -1px 0 #fff,
-		-1px 1px 0 #fff,
-		1px 1px 0 #fff;
-}
+/* --- inner box --- */
 
 .inner-box-bg {
   width: 80%;
@@ -140,18 +147,6 @@ body {
   background-image: url(../src/components/images/m3n3.png);
 }
 
-.theme-color-1 {
-  background-color: #baffc9
-}
-
-.theme-color-2 {
-  background-color: #ffb246
-}
-
-.theme-color-3 {
-  background-color: #bae1ff
-}
-
 .hidden-on-mobile {
   display: none;
 }
@@ -188,10 +183,9 @@ body {
   text-align: center;
 }
 
-
 .close {
 	background: white;
-	color: #606061; /*X*/
+	color: black; /*X*/
 	line-height: 25px;
 	position: absolute;
 	right: -12px;
@@ -210,6 +204,7 @@ body {
 
 .close:hover { 
   background: #ffb246; 
+  color: white; /*X*/
 }
 
 /*----style links --- */
@@ -243,7 +238,6 @@ a:hover .underline_text {
 /* registry style */
 
 .logo{
-  /* height: 112px; */
   height: auto;
   width: 112px;
   margin: auto;
@@ -261,6 +255,34 @@ a:hover .underline_text {
 
 .registry-links > a {
   margin: 10px; 
+}
+
+/*---text style --- */
+
+.style-text {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 32px;
+  text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+}
+
+.section-text {
+  padding: 0;
+  margin: 0;
+}
+
+.break-text {
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.higher-emphasis {
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 640px) {
