@@ -53,7 +53,12 @@ export default class Home extends React.Component {
                 <div>
                     <a href='#close' title='Close' className='close'>X</a>
                     <h2 className='text'>Registry</h2>
-                    <a href="www.amazon.com">Amazon</a>
+                    <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank'>
+                        <img className='logo' src='/images/babyregistryamazon.png' alt='amazon baby registry logo'/>
+                    </a>
+                    <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank'>
+                        <img className='logo' src='/images/buybuybabylogo.png' alt='buy buy baby registry logo'/>
+                    </a>
                 </div>
             </div>
           </div>  
