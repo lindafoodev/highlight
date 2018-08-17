@@ -4,6 +4,14 @@ orange: #ffb246
 blue: #bae1ff
 
 */
+html {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent; /* make scrollbar transparent */
+}
 
 html, body {
   height: 100%;
@@ -18,6 +26,7 @@ body {
     #fff 20px, /*color, start - first half of gradient */
     #fff 40px); /*color, stop - second half of gradient */
 }
+
 
 .custom {
   cursor: url()
@@ -72,7 +81,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .overlay-hide {
@@ -298,6 +306,10 @@ a:hover .underline_text {
 
   .registry-links {
     flex-direction: row;
+  }
+
+  .modalDialog > div {
+    margin: 5% auto;
   }
 }
 
