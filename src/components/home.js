@@ -13,7 +13,7 @@ export default class Home extends React.Component {
                     </div>
                     <div className='box-container theme-color-2 col-4'>
                         <div className='inner-box-bg m2n1'></div>
-                        <div className='overlay'><a href='#openModal-registry' className='hvr-grow style-text style-text-short'>Registry</a></div>
+                        <div className='overlay'><a href='#openModal-registry' className='hvr-grow style-text'>Registry</a></div>
                     </div>
                     <div className='hidden-on-mobile box-container theme-color-3 col-4'>
                         <div className='inner-box-bg m3n1'></div>
@@ -27,7 +27,7 @@ export default class Home extends React.Component {
                     </div>
                     <div className='box-container theme-color-1 col-4'>
                         <div className='inner-box-bg m2n2'></div>
-                        <div className='overlay'><a href='#openModal-eventDetails' className='hvr-grow style-text style-text-long'>Event Details</a></div>
+                        <div className='overlay'><a href='#openModal-eventDetails' className='hvr-grow style-text'>Event Details</a></div>
                     </div>
                     <div className='hidden-on-mobile box-container theme-color-2 col-4'>
                         <div className='inner-box-bg m3n2'></div>
