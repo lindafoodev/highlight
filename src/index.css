@@ -5,10 +5,6 @@ blue: #bae1ff
 
 */
 
-/* * {
-  box-sizing: border-box;
-} */
-
 html, body {
   height: 100%;
 }
@@ -23,12 +19,12 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
-  justify-content: center; 
-  height: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
 }
 
 body {
@@ -40,32 +36,6 @@ body {
     #fff 40px); /*color, stop - second half of gradient */
 }
 
-/* .row {
-  max-width: 1000px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-.row::before, .row::after {
-  display: table;
-  content: '';
-}
-
-.row::after {
-  clear: both;
-}
-
-.col-3, .col-4, .col-6, .col-12 {
-  margin: auto;
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
-} 
-
- .col-3, .col-4, .col-6, .col-12 {
-  width: 100%;
-}  */
-
 .box-container {
   width: 150px;
   height: 150px;
@@ -73,10 +43,6 @@ body {
   border: #fff 2px solid;
   position: relative;
   text-align: center;
-}
-
-.row {
-  width: auto;
 }
 
 .overlay {
@@ -90,6 +56,10 @@ body {
   opacity: 0;
   transition: .5s ease;
   background-color: #6ad380;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .overlay-hide {
@@ -106,7 +76,7 @@ body {
 }
 
 .main:hover .overlay-hide{
-  opacity: .8;
+  opacity: .6;
 }
 
 .main:hover .overlay {
@@ -121,24 +91,12 @@ body {
   font-family: 'Dancing Script', cursive;
   color: black;
   font-size: 32px;
-  position: absolute;
-  top: 45%; /*30*/
-  left: 50%; /*35*/
-  transform: translate(-50%, -50%);
   text-shadow:
 		-1px -1px 0 #fff,
 		1px -1px 0 #fff,
 		-1px 1px 0 #fff,
 		1px 1px 0 #fff;
 }
-
-/* .style-text-short {
-  left: 39%;
-}
-
-.style-text-long {
-  left: 32%;
-} */
 
 .text {
   font-family: 'EB Garamond', serif;
@@ -272,7 +230,7 @@ a:hover .underline_text{
   text-decoration-color: white;
 }
 
-/* .hvr-grow {
+.hvr-grow {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
@@ -287,33 +245,16 @@ a:hover .underline_text{
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
-} */
+}
 
 @media only screen and (min-width: 640px) {
-  .box-container {
+  .box {
+    flex-direction: row;
+  }
+
+  .hidden-on-mobile {
     display: flex;
   }
-
-/* 
-  .col-3, .col-4, .col-6, .col-12 {
-    float: left;
-  }
-
-  .col-3 {
-    width: 25%
-  }
-
-  .col-4 {
-    width: 33.33%
-  }
-
-  .col-6 {
-    width: 50%;
-  }
-
-  .col-12 {
-    width: 100%;
-  } */
 }
 
 
