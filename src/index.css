@@ -95,10 +95,6 @@ body {
 		1px 1px 0 #fff;
 }
 
-.text {
-  font-family: 'EB Garamond', serif;
-}
-
 .inner-box-bg {
   width: 80%;
   height: 80%;
@@ -163,12 +159,12 @@ body {
 /*----modal----*/
 .modalDialog {
   position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'EB Garamond', serif;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(236, 181, 98, 0.6); /*full screen faded out*/
 	z-index: 99999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
@@ -178,25 +174,24 @@ body {
 }
 
 .modalDialog:target {
-	opacity:1;
+	opacity: 1;
 	pointer-events: auto;
 }
 
 .modalDialog > div {
-	width: 400px;
+	width: 45%;
 	position: relative;
 	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+  padding: 5px 20px 13px 20px;
+  border: #fff 2px solid;
+  opacity: 1;
+  text-align: center;
 }
 
+
 .close {
-	background: #606061;
-	color: #FFFFFF;
+	background: white;
+	color: #606061; /*X*/
 	line-height: 25px;
 	position: absolute;
 	right: -12px;
@@ -213,7 +208,9 @@ body {
 	box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover { 
+  background: #ffb246; 
+}
 
 /*----style links --- */
 
@@ -221,8 +218,7 @@ a {
   text-decoration: none;
 }
 
-a:hover .underline_text{
-  
+a:hover .underline_text {
   text-decoration: underline;
   text-decoration-color: white;
 }
@@ -247,9 +243,24 @@ a:hover .underline_text{
 /* registry style */
 
 .logo{
-  height: 100px;
-  width: 100px;
-  border: red 4px solid;
+  /* height: 112px; */
+  height: auto;
+  width: 112px;
+  margin: auto;
+  padding: 5px;
+  background: #fff;
+}
+
+.registry-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.registry-links > a {
+  margin: 10px; 
 }
 
 @media only screen and (min-width: 640px) {
@@ -259,6 +270,10 @@ a:hover .underline_text{
 
   .hidden-on-mobile {
     display: flex;
+  }
+
+  .registry-links {
+    flex-direction: row;
   }
 }
 

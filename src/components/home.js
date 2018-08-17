@@ -1,5 +1,8 @@
 import React from 'react';
 
+const amazon = require('./images/babyregistryamazon.png');
+const bbb = require('./images/buybuybabylogo.png');
+
 export default class Home extends React.Component {
 
   render(){
@@ -49,16 +52,19 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-            <div id='openModal-registry' className='modalDialog'>
-                <div>
+            <div id='openModal-registry' className='modalDialog openModal-registry-style'>
+                <div className='theme-color-1'>
                     <a href='#close' title='Close' className='close'>X</a>
-                    <h2 className='text'>Registry</h2>
-                    <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank'>
-                        <img className='logo' src='/images/babyregistryamazon.png' alt='amazon baby registry logo'/>
-                    </a>
-                    <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank'>
-                        <img className='logo' src='/images/buybuybabylogo.png' alt='buy buy baby registry logo'/>
-                    </a>
+                    <h2 className='style-text'>Registry</h2>
+                    <div className='registry-links'>
+                        <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>
+                            <img clasName='logo' height='auto' width='112' src={amazon} alt='Amazon Registry logo'/>
+                        </a>
+                        <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='BuyBuy Baby Registry'>
+                            <img className='logo' src={bbb} alt='BuyBuy Baby Registry logo'/>
+                        </a>
+                    </div>
+                    <p>Shiwani and Animesh are registered at Amazon and buybuy Baby.</p>
                 </div>
             </div>
           </div>  
