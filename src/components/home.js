@@ -49,13 +49,13 @@ export default class Home extends React.Component {
                     </div>
                 </div>
             </div>
-                {/* <div id='openModal-registry' className='hidemodalDialog'>
-                    <div>
-                        <a href='#close' title='Close' className='close'>X</a>
-                        <h2 className='text'>Registry</h2>
-                        <a href="www.amazon.com">Amazon</a>
-                    </div>
-                </div> */}
+            <div id='openModal-registry' className='modalDialog'>
+                <div>
+                    <a href='#close' title='Close' className='close'>X</a>
+                    <h2 className='text'>Registry</h2>
+                    <a href="www.amazon.com">Amazon</a>
+                </div>
+            </div>
           </div>  
       );
   }

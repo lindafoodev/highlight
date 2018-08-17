@@ -11,6 +11,12 @@ html, body {
 
 body {
   margin: 0;
+  background: repeating-linear-gradient(
+    to right,
+    #ffb246, /*color, start - first half of gradient */
+    #ffb246 20px, /*color, stop - second half of gradient */
+    #fff 20px, /*color, start - first half of gradient */
+    #fff 40px); /*color, stop - second half of gradient */
 }
 
 .box {
@@ -25,15 +31,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; 
-}
-
-body {
-  background: repeating-linear-gradient(
-    to right,
-    #ffb246, /*color, start - first half of gradient */
-    #ffb246 20px, /*color, stop - second half of gradient */
-    #fff 20px, /*color, start - first half of gradient */
-    #fff 40px); /*color, stop - second half of gradient */
 }
 
 .box-container {
@@ -75,12 +72,12 @@ body {
   background-color: #d6dbe0;
 }
 
-.main:hover .overlay-hide{
-  opacity: .6;
+.box:hover .overlay {
+  opacity: .9;
 }
 
-.main:hover .overlay {
-  opacity: .9;
+.box:hover .overlay-hide{
+  opacity: .6;
 }
 
 .box-container:hover .overlay {
