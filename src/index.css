@@ -41,12 +41,12 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .box-container {
@@ -165,7 +165,9 @@ body {
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
-	pointer-events: none;
+  pointer-events: none;
+  max-height: 100vh; /*contain modal so scroll enabled if overflow outside of viewport*/
+  overflow-y: auto; /*contain modal so scroll enabled if overflow outside of viewport*/
 }
 
 .modalDialog:target {
