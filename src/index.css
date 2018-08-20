@@ -2,6 +2,10 @@
 green: #baffc9
 orange: #ffb246
 blue: #bae1ff
+white: #fff
+black: #000
+overlay-green: #6ad380
+overlay-hide-greyish: #d6dbe0
 
 */
 html {
@@ -294,6 +298,9 @@ a:hover .underline_text {
 .higher-emphasis {
   font-weight: bold;
 }
+
+/* --- countdown --- */
+
 
 @media only screen and (min-width: 640px) {
   .box {
