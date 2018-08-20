@@ -20,7 +20,7 @@ export default class Home extends React.Component {
                         <div className='inner-box-bg m1n1'></div>
                         <div className='overlay-hide'></div>
                     </div>
-                    <div className='box-container theme-color-2 col-4'>
+                    <div className='box-container box-container-with-content theme-color-2 col-4'>
                         <div className='inner-box-bg m2n1'></div>
                         <div className='overlay'><a href='#registry' className='hvr-grow style-text'>Registry</a></div>
                     </div>
@@ -34,7 +34,7 @@ export default class Home extends React.Component {
                         <div className='inner-box-bg m1n2'></div>
                         <div className='overlay-hide'></div>
                     </div>
-                    <div className='box-container theme-color-1 col-4'>
+                    <div className='box-container box-container-with-content theme-color-1 col-4'>
                         <div className='inner-box-bg m2n2'></div>
                         <div className='overlay'><a href='#event' className='hvr-grow style-text'>Event Details</a></div>
                     </div>
@@ -48,7 +48,7 @@ export default class Home extends React.Component {
                         <div className='inner-box-bg m1n3'></div>
                         <div className='overlay-hide'></div>
                     </div>
-                    <div className='box-container theme-color-3 col-4'>
+                    <div className='box-container box-container-with-content theme-color-3 col-4'>
                         <div className='inner-box-bg m2n3'></div>
                         <div className='overlay'><a href='#countdown' className='hvr-grow style-text'>Countdown</a></div>
                     </div>
