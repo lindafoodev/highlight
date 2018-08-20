@@ -3,7 +3,7 @@
 This is a repo for my personal fun projects celebrating life events for friends. 
 
 Currently, it contains: 
-* a personalized website for a baby shower
+* a personalized website for a baby shower (FE Only - JavaScript/React, HTML/CSS)
 
 # Scripts
 
