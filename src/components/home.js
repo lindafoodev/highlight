@@ -1,11 +1,17 @@
 import React from 'react';
+import Countdown from './Countdown.js';
 
 const amazon = require('./images/babyregistryamazon.png');
 const bbb = require('./images/buybuybabylogo.png');
 
 export default class Home extends React.Component {
-
   render(){
+    const currentDate = new Date();
+    const year = (currentDate.getMonth() === 9 && currentDate.getDate() > 17) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+    // console.log(currentDate);
+    // console.log(currentDate.getMonth());
+    // console.log(currentDate.getFullYear());
+    // console.log(year);
       return (
           <div className='main custom'>
             <div className='box'>
@@ -58,7 +64,7 @@ export default class Home extends React.Component {
                     <h2 className='style-text'>Registry</h2>
                     <div className='registry-links'>
                         <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>
-                            <img clasName='logo' height='auto' width='112' src={amazon} alt='Amazon Registry logo'/>
+                            <img className='logo' height='auto' width='112' src={amazon} alt='Amazon Registry logo'/>
                         </a>
                         <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>
                             <img className='logo' src={bbb} alt='BuyBuy Baby Registry logo'/>
@@ -89,9 +95,8 @@ export default class Home extends React.Component {
                 <div className='theme-color-1'>
                     <a href='#close' title='Close' className='close'>X</a>
                     <h2 className='style-text'>Countdown</h2>
-                    <div className='countdown'>
-                       
-                    </div>
+                    <Countdown date={`${year}-10-18T00:00:00`} />
+                    {/*Midnight of 17th to 18th Oct*/}
                     <p className='section-text'>Arrival Date</p>
                     <p className='section-text'>October 18, 2018</p>
                 </div>
