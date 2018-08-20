@@ -13,7 +13,7 @@ export default class Home extends React.Component {
     // console.log(currentDate.getFullYear());
     // console.log(year);
       return (
-          <div className='main custom'>
+          <div className='main'>
             <div className='box'>
                 <div className='column'>
                     <div className='hidden-on-mobile box-container theme-color-1 col-4'>
