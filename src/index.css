@@ -42,6 +42,10 @@ body {
   background-color: #bae1ff
 }
 
+.theme-color-4 {
+  background-color: #fff
+}
+
 .box {
   display: flex;
   display: -webkit-box;

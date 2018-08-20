@@ -75,7 +75,7 @@ export default class Home extends React.Component {
                 </div>
             </div>
             <div id='event' className='modalDialog'>
-                <div className='theme-color-3'>
+                <div className='theme-color-4'>
                     <a href='#close' title='Close' className='close'>X</a>
                     <p className='section-text'>Please join us for a</p>
                     <p className='break-text style-text higher-emphasis'>Baby Shower</p>
