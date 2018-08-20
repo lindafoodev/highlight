@@ -31,11 +31,6 @@ body {
     #fff 40px); /*color, stop - second half of gradient */
 }
 
-
-.custom {
-  cursor: url()
-}
-
 .theme-color-1 {
   background-color: #baffc9
 }
