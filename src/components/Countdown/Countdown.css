@@ -1,0 +1,32 @@
+/* --- countdown --- */
+.Countdown{
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+
+.Countdown-col{
+  display: inline-block;
+}
+
+.Countdown-col-element{
+  display: inline-block;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Countdown-col-element strong{
+  font-size: 46px;
+}
+
+.time-box {
+  width: 80px;
+  height: auto;
+  background: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.time-text {
+  font-weight: bold;
+}

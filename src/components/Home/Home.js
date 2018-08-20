@@ -1,8 +1,8 @@
 import React from 'react';
-import Countdown from './Countdown.js';
+import Countdown from '../Countdown/Countdown';
 
-const amazon = require('./images/babyregistryamazon.png');
-const bbb = require('./images/buybuybabylogo.png');
+const amazon = require('../images/babyregistryamazon.png');
+const bbb = require('../images/buybuybabylogo.png');
 
 export default class Home extends React.Component {
   render(){
