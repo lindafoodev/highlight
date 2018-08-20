@@ -297,15 +297,14 @@ a .logo:active {
   font-style: italic;
 }
 
+.emphasis-text {
+  font-weight: bold;
+}
+
 .style-text {
   font-family: 'Dancing Script', cursive;
   color: black;
   font-size: 32px;
-  text-shadow: /*outline text*/
-		-1px -1px 0 #fff,
-		1px -1px 0 #fff,
-		-1px 1px 0 #fff,
-		1px 1px 0 #fff;
 }
 
 .section-text {
@@ -321,6 +320,11 @@ a .logo:active {
 
 .higher-emphasis {
   font-weight: bold;
+  text-shadow: /*outline text*/
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
 }
 
 @media only screen and (min-width: 640px) {
