@@ -8,6 +8,7 @@ export default class Home extends React.Component {
   render(){
     const currentDate = new Date();
     const year = (currentDate.getMonth() === 9 && currentDate.getDate() > 17) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+    // if target date has passed, then current year is adjusted to calculate countdown properly 
     // console.log(currentDate);
     // console.log(currentDate.getMonth());
     // console.log(currentDate.getFullYear());
@@ -101,7 +102,6 @@ export default class Home extends React.Component {
                     <Countdown date={`${year}-10-18T00:00:00`} />
                     <p className='break-text'>on October 18th, 2018</p>
                     {/*Midnight of 17th to 18th Oct*/}
-
                 </div>
             </div>
           </div>  
