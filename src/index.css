@@ -25,9 +25,9 @@ body {
   background: repeating-linear-gradient(
     to right,
     #ffb246, /*color, start - first half of gradient */
-    #ffb246 20px, /*color, stop - second half of gradient */
-    #fff 20px, /*color, start - first half of gradient */
-    #fff 40px); /*color, stop - second half of gradient */
+    #ffb246 48px, /*color, stop - second half of gradient */
+    #fff 48px, /*color, start - first half of gradient */
+    #fff 96px); /*color, stop - second half of gradient */
 }
 
 .theme-color-1 {
