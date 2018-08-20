@@ -6,7 +6,6 @@ white: #fff
 black: #000
 overlay-green: #6ad380
 overlay-hide-greyish: #d6dbe0
-
 */
 html {
   overflow-y: scroll;
@@ -81,6 +80,7 @@ body {
 .box-container-with-content:active {
   transform: scale(1.1);
   z-index: 99999;
+  box-shadow: 0 0 50px rgba(33,33,33,.2); 
 }
 
 .overlay {
@@ -117,7 +117,7 @@ body {
 }
 
 .box:hover .overlay-hide{
-  opacity: .6;
+  opacity: .4;
 }
 
 .box-container:hover .overlay {
@@ -237,6 +237,8 @@ body {
 
 a {
   text-decoration: none;
+  font-weight: bold;
+  color: #000;
 }
 
 a:hover .underline_text {
@@ -271,6 +273,13 @@ a:hover .underline_text {
   background: #fff;
 }
 
+a .logo:hover,
+a .logo:focus,
+a .logo:active {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px rgba(33,33,33,.2); 
+}
+
 .registry-links {
   display: flex;
   justify-content: center;
@@ -284,12 +293,15 @@ a:hover .underline_text {
 }
 
 /*---text style --- */
+.attention-text {
+  font-style: italic;
+}
 
 .style-text {
   font-family: 'Dancing Script', cursive;
   color: black;
   font-size: 32px;
-  text-shadow:
+  text-shadow: /*outline text*/
 		-1px -1px 0 #fff,
 		1px -1px 0 #fff,
 		-1px 1px 0 #fff,
