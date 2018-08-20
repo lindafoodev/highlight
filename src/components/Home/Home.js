@@ -95,13 +95,13 @@ export default class Home extends React.Component {
             <div id='countdown' className='modalDialog'>
                 <div className='theme-color-1'>
                     <a href='#close' title='Close' className='close'>X</a>
-                    <h2 className='style-text'>Countdown</h2>
-                    <p className='section-text'>Baby Awika</p>
-                    <p className='section-text'>arrives on</p>
-                    <p className='section-text'>October 18th, 2018</p>
-                    <p className='section-text'>in</p>
+                    <h2 className='style-text higher-emphasis'>Countdown</h2>
+                    <p className='style-text break-text'>Baby Awika</p>
+                    <p className='section-text'>arrives in</p>
                     <Countdown date={`${year}-10-18T00:00:00`} />
+                    <p className='break-text'>on October 18th, 2018</p>
                     {/*Midnight of 17th to 18th Oct*/}
+
                 </div>
             </div>
           </div>  
