@@ -16,97 +16,96 @@ export default class Home extends React.Component {
     // console.log(year);
       return (
           <div className='main'>
-            <div className='box'>
-                <div className='column'>
-                    <div className='hidden-on-mobile box-container theme-color-1 col-4'>
-                        <div className='inner-box-bg m1n1'></div>
-                        <div className='overlay-hide'></div>
+            <div className='background'>
+                <div className='box'>
+                    <div className='column'>
+                        <div className='hidden-on-mobile box-container theme-color-1 col-4'>
+                            <div className='inner-box-bg m1n1'></div>
+                            <div className='overlay-hide'></div>
+                        </div>
+                        <div className='box-container box-container-with-content theme-color-2 col-4'>
+                            <div className='inner-box-bg m2n1'></div>
+                            <div className='overlay'><a href='#registry' className='higher-emphasis hvr-grow style-text'>Registry</a></div>
+                        </div>
+                        <div className='hidden-on-mobile box-container theme-color-3 col-4'>
+                            <div className='inner-box-bg m3n1'></div>
+                            <div className='overlay-hide'></div>
+                        </div>
                     </div>
-                    <div className='box-container box-container-with-content theme-color-2 col-4'>
-                        <div className='inner-box-bg m2n1'></div>
-                        <div className='overlay'><a href='#registry' className='higher-emphasis hvr-grow style-text'>Registry</a></div>
+                    <div className='column'>
+                        <div className='hidden-on-mobile box-container theme-color-3 col-4'>
+                            <div className='inner-box-bg m1n2'></div>
+                            <div className='overlay-hide'></div>
+                        </div>
+                        <div className='box-container box-container-with-content theme-color-1 col-4'>
+                            <div className='inner-box-bg m2n2'></div>
+                            <div className='overlay'><a href='#event' className='higher-emphasis hvr-grow style-text'>Event Details RSVP</a></div>
+                        </div>
+                        <div className='hidden-on-mobile box-container theme-color-2 col-4'>
+                            <div className='inner-box-bg m3n2'></div>
+                            <div className='overlay-hide'></div>
+                        </div>
                     </div>
-                    <div className='hidden-on-mobile box-container theme-color-3 col-4'>
-                        <div className='inner-box-bg m3n1'></div>
-                        <div className='overlay-hide'></div>
+                    <div className='column'>
+                        <div className='hidden-on-mobile box-container theme-color-2 col-4'>
+                            <div className='inner-box-bg m1n3'></div>
+                            <div className='overlay-hide'></div>
+                        </div>
+                        <div className='box-container box-container-with-content theme-color-3 col-4'>
+                            <div className='inner-box-bg m2n3'></div>
+                            <div className='overlay'><a href='#countdown' className='higher-emphasis hvr-grow style-text'>Countdown</a></div>
+                        </div>
+                        <div className='hidden-on-mobile box-container theme-color-1 col-4'>
+                            <div className='inner-box-bg m3n3'></div>
+                            <div className='overlay-hide'></div>
+                        </div>
                     </div>
                 </div>
-                <div className='column'>
-                    <div className='hidden-on-mobile box-container theme-color-3 col-4'>
-                        <div className='inner-box-bg m1n2'></div>
-                        <div className='overlay-hide'></div>
-                    </div>
-                    <div className='box-container box-container-with-content theme-color-1 col-4'>
-                        <div className='inner-box-bg m2n2'></div>
-                        <div className='overlay'><a href='#event' className='higher-emphasis hvr-grow style-text'>Event Details</a></div>
-                    </div>
-                    <div className='hidden-on-mobile box-container theme-color-2 col-4'>
-                        <div className='inner-box-bg m3n2'></div>
-                        <div className='overlay-hide'></div>
+                <div id='registry' className='modalDialog'>
+                    <div className='theme-color-1'>
+                        <a href='#close' title='Close' className='close'>X</a>
+                        <h2 className='style-text higher-emphasis'>Registry</h2>
+                        <div className='registry-links'>
+                            <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>
+                                <img className='logo' height='auto' width='112' src={amazon} alt='Amazon Registry logo'/>
+                            </a>
+                            <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>
+                                <img className='logo' src={bbb} alt='BuyBuy Baby Registry logo'/>
+                            </a>
+                        </div>
+                        <p>Shiwani & Animesh are registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
                     </div>
                 </div>
-                <div className='column'>
-                    <div className='hidden-on-mobile box-container theme-color-2 col-4'>
-                        <div className='inner-box-bg m1n3'></div>
-                        <div className='overlay-hide'></div>
+                <div id='event' className='modalDialog'>
+                    <div className='theme-color-4'>
+                        <a href='#close' title='Close' className='close'>X</a>
+                        <p className='section-text'>Please join us for a</p>
+                        <p className='break-text style-text higher-emphasis'>Baby Shower</p>
+                        <p className='break-text'>honoring</p>
+                        <p className='break-text style-text'>Shiwani & Animesh</p>
+                        <p className='break-text'>Sunday, September 16th, 2018</p>
+                        <p className='section-text'>2:00 pm to 6:00 pm</p>
+                        <p className='break-text emphasis-text'>Clubhouse</p>
+                        <p className='section-text emphasis-text'>550 Moreland Way</p>
+                        <p className='section-text emphasis-text'>Santa Clara, Ca 95054</p>
+                        <p className='section-text break-text'>Hosted by Olivia & Linda</p>
+                        <Button class={'btn-rsvp hvr-grow'} handleClick={ () => alert('hi')} btnTxt={'RSVP'}/>
+                        <p className='break-text'>Registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
                     </div>
-                    <div className='box-container box-container-with-content theme-color-3 col-4'>
-                        <div className='inner-box-bg m2n3'></div>
-                        <div className='overlay'><a href='#countdown' className='higher-emphasis hvr-grow style-text'>Countdown</a></div>
-                    </div>
-                    <div className='hidden-on-mobile box-container theme-color-1 col-4'>
-                        <div className='inner-box-bg m3n3'></div>
-                        <div className='overlay-hide'></div>
+                </div>
+                <div id='countdown' className='modalDialog'>
+                    <div className='theme-color-1'>
+                        <a href='#close' title='Close' className='close'>X</a>
+                        <h2 className='style-text higher-emphasis'>Countdown</h2>
+                        <p className='style-text break-text'>Baby Awika</p>
+                        <p className='section-text'>arrives in</p>
+                        <Countdown date={`${year}-10-18T00:00:00`} />
+                        <p className='break-text'>on October 18th, 2018</p>
+                        {/*Midnight of 17th to 18th Oct*/}
                     </div>
                 </div>
             </div>
-            <div id='registry' className='modalDialog'>
-                <div className='theme-color-1'>
-                    <a href='#close' title='Close' className='close'>X</a>
-                    <h2 className='style-text higher-emphasis'>Registry</h2>
-                    <div className='registry-links'>
-                        <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>
-                            <img className='logo' height='auto' width='112' src={amazon} alt='Amazon Registry logo'/>
-                        </a>
-                        <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>
-                            <img className='logo' src={bbb} alt='BuyBuy Baby Registry logo'/>
-                        </a>
-                    </div>
-                    <p>Shiwani & Animesh are registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
-                </div>
-            </div>
-            <div id='event' className='modalDialog'>
-                <div className='theme-color-4'>
-                    <a href='#close' title='Close' className='close'>X</a>
-                    <p className='section-text'>Please join us for a</p>
-                    <p className='break-text style-text higher-emphasis'>Baby Shower</p>
-                    <p className='break-text'>honoring</p>
-                    <p className='break-text style-text'>Shiwani & Animesh</p>
-                    <p className='break-text'>Sunday, September 16, 2018</p>
-                    <p className='section-text'>2:00pm to 6:00pm</p>
-                    <p className='break-text emphasis-text'>Clubhouse</p>
-                    <p className='section-text emphasis-text'>550 Moreland Way</p>
-                    <p className='section-text emphasis-text'>Santa Clara, Ca 95054</p>
-                    <p className='section-text break-text'>Hosted by Olivia & Linda</p>
-                    {/* <p className='break-text attention-text'>Regrets only</p>
-                    <p className='section-text'>to Linda</p> 
-                    <p className='section-text'>713 822 4934</p> */}
-                    <Button class={'btn-rsvp'} handleClick={ () => alert('hi')} btnTxt={'RSVP'}/>
-                    <p className='break-text'>Registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
-                </div>
-            </div>
-            <div id='countdown' className='modalDialog'>
-                <div className='theme-color-1'>
-                    <a href='#close' title='Close' className='close'>X</a>
-                    <h2 className='style-text higher-emphasis'>Countdown</h2>
-                    <p className='style-text break-text'>Baby Awika</p>
-                    <p className='section-text'>arrives in</p>
-                    <Countdown date={`${year}-10-18T00:00:00`} />
-                    <p className='break-text'>on October 18th, 2018</p>
-                    {/*Midnight of 17th to 18th Oct*/}
-                </div>
-            </div>
-          </div>  
+        </div>  
       );
   }
 }

@@ -5,5 +5,5 @@ export default function Button(props){
         <button className={props.class} onClick={()=>props.handleClick()}>
         {props.btnTxt}
         </button>
-    )
-}
+    );
+};
