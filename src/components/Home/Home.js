@@ -106,7 +106,7 @@ export default class Home extends React.Component {
                         <p className='section-text'>September 9th</p>
                         <Button class={'btn-submit hvr-grow'} handleClick={ () => alert('hi')} btnTxt={'Submit'}/>
                         <p className='break-text'>We look forward to</p>
-                        <p className='section-text'>celebrating with you.</p>
+                        <p className='section-text'>celebrating with you!</p>
                     </div>
                 </div>
                 <div id='countdown' className='modalDialog'>
