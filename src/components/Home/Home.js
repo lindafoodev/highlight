@@ -97,17 +97,12 @@ export default class Home extends React.Component {
                     <div className='theme-color-3'>
                         <a href='#close' title='Close' className='close'>X</a>
                         <h2 className='style-text higher-emphasis'>RSVP</h2>
-                        <p className='break-text'>Please kindly respond by</p>
-                        <p className='section-text'>September 9th</p>
-                        <p className='break-text emphasis-text'>Date</p>
+                        <p className='break-text emphasis-text attention-text'>Baby Shower Date</p>
                         <p className='section-text emphasis-text'>Sunday, September 16th, 2018</p>
                         <p className='section-text emphasis-text'>2:00 pm to 6:00 pm</p>
                         <Form />
-                        <p className='break-text emphasis-text'>Clubhouse</p>
-                        <p className='section-text emphasis-text'>550 Moreland Way</p>
-                        <p className='section-text emphasis-text'>Santa Clara, Ca 95054</p>
-                        <p className='break-text'>We look forward to</p>
-                        <p className='section-text'>celebrating with you!</p>
+                        {/* <p className='break-text'>We look forward to</p>
+                        <p className='section-text'>celebrating with you!</p> */}
                     </div>
                 </div>
                 <div id='countdown' className='modalDialog'>

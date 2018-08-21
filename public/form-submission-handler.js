@@ -1,12 +1,12 @@
 (function() {
   function validEmail(email) {
-    console.log('validEmail');
+    // console.log('validEmail');
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
   }
 
   function validateHuman(honeypot) {
-    console.log('validateHuman');
+    // console.log('validateHuman');
     if (honeypot) {  //if hidden form filled up
       console.log("Robot Detected!");
       return true;
@@ -17,7 +17,7 @@
 
   // get all data in form and return object
   function getFormData(form) {
-    console.log('getFormData');
+    // console.log('getFormData');
     var elements = form.elements;
 
     var fields = Object.keys(elements).filter(function(k) {
@@ -58,12 +58,12 @@
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
-    console.log(formData);
+    // console.log(formData);
     return formData;
   }
 
   function handleFormSubmit(event) {
-    console.log('handleFormSubmit');  // handles form submit without any jquery
+    // console.log('handleFormSubmit');  // handles form submit without any jquery
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
@@ -89,9 +89,17 @@
       xhr.onreadystatechange = function() {
           console.log(xhr.status, xhr.statusText);
           console.log(xhr.responseText);
-          var formElements = form.querySelector(".form-elements")
+          var formElements = form.querySelector(".form-elements");
+          var rsvpElements = form.querySelector(".rsvp-message");
+          var noticeElements = form.querySelector(".notice-message");
           if (formElements) {
             formElements.style.display = "none"; // hide form
+          }
+          if(rsvpElements) {
+            rsvpElements.style.display = "none"; // hide message
+          }
+          if(noticeElements) {
+            noticeElements.style.display = "none"; // hide message
           }
           var thankYouMessage = form.querySelector(".thankyou_message");
           if (thankYouMessage) {
@@ -108,8 +116,8 @@
   }
   
   function loaded() {
-    console.log('loaded');
-    console.log("Contact form submission handler loaded successfully.");
+    // console.log('loaded');
+    // console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
     for (var i = 0; i < forms.length; i++) {
@@ -119,7 +127,7 @@
   document.addEventListener("DOMContentLoaded", loaded, false);
 
   function disableAllButtons(form) {
-    console.log('disableAllButtons');
+    // console.log('disableAllButtons');
     var buttons = form.querySelectorAll("button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
