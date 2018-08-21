@@ -8,6 +8,10 @@ class Form extends Component {
         <form autoComplete="off" className="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
           action="https://script.google.com/macros/s/AKfycbzyU8kcpTIvBC5neAipdHlJTZvJkqfruDIaH3pDIw2MS2IPgNU/exec">
             {/* <!-- change the form action to your script url --> */}
+            <!--input id must be honeypot or else it wont work-->
+            <label className="sr-only">Keep this field blank</label>
+            <input id="honeypot" type="text" name="honeypot" defaultValue="" />
+            <!--the rest of your form-->
 
             <div className="form-elements">
               <fieldset className="pure-group">
@@ -66,17 +70,11 @@ class Form extends Component {
               {/* <button className="button-success pure-button button-xlarge">
                 <i className="fa fa-paper-plane"></i>&nbsp;Send</button> */}
             </div>
-
             {/* <!-- Customise the Thankyou Message People See when they submit the form: --> */}
             <div className="thankyou_message" style={{display:'none'}}>
-              <h2><em>Thanks</em> for RSVPing!
-                We look forward to celebrating with you!</h2>
+              <h2><em>Thanks</em> for RSVPing!</h2>
             </div>
           </form>
-
-          {/*Submit the Form to Google Using AJAX*/}
-          <script data-cfasync="false" type="text/javascript"
-          src="form-submission-handler.js"></script>
         </div>
     );
   }

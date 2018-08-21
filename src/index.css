@@ -382,6 +382,12 @@ a .logo:active {
   transform: translateY(4px);
 }
 
+/* --- Form --- */
+
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+
 @media only screen and (min-width: 640px) {
   .box {
     flex-direction: row;
