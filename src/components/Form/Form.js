@@ -5,7 +5,7 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form autoComplete="off" className="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+        <form autoComplete="off" className="gform" method="POST" data-email="example@email.net"
           action="https://script.google.com/macros/s/AKfycbzyU8kcpTIvBC5neAipdHlJTZvJkqfruDIaH3pDIw2MS2IPgNU/exec">
             {/* <!-- change the form action to your script url --> */}
 
@@ -18,7 +18,7 @@ class Form extends Component {
             <input id="honeypot" type="text" name="honeypot" defaultValue="" />
 
             <div className="form-elements">
-              <fieldset className="pure-group">
+              <fieldset>
                 <legend>Full Name</legend>
                 <label htmlFor="first">First Name</label>
                 <input required id="first" name="first" placeholder="Jane" />
@@ -26,23 +26,23 @@ class Form extends Component {
                 <input required id="last" name="last" placeholder="Doe" />
               </fieldset>
 
-              <fieldset className="pure-group">
+              <fieldset>
                 <legend>Can you attend?</legend>
                 <input id="rsvp" type="radio" name="rsvp" value="Yes" required/> <label htmlFor="rsvp">Yes, will celebrate in person</label>
                 <input id="rsvp" type="radio" name="rsvp" value="No" /> <label htmlFor="rsvp">No, will celebrate in spirit</label>
               </fieldset>
 
-              <fieldset className="pure-group">
+              <fieldset>
                 <label htmlFor="guestCount">No. of Guests Attending</label>
                 <input required id="guestCount" type="text" pattern="[0-9]*" title="Input a valid number" name="guestCount" defaultValue="1" />
               </fieldset>              
               
-              <fieldset className="pure-group">
+              <fieldset>
                 <label htmlFor="otherGuests">Other Guest Names</label>
                 <input id="otherGuests" name="otherGuests" placeholder="Shiwani, Animesh" />
               </fieldset>  
 
-              <fieldset className="pure-group">
+              <fieldset>
                 <label htmlFor="email">Email Address</label>
                 <input required id="email" name="email" type="email" defaultValue=""
                 placeholder="your.name@email.com"/>
@@ -50,7 +50,7 @@ class Form extends Component {
                   Must be a valid email address</span>
               </fieldset>
 
-              <fieldset className="pure-group">
+              <fieldset>
                 <legend>Mailing Address</legend>
                 <label htmlFor="address1">Address 1</label>
                 <input required id="address1" name="address1" placeholder="123 Safari Blvd" />
@@ -64,7 +64,7 @@ class Form extends Component {
                 <input required id="zip" name="zip" placeholder="12345" />
               </fieldset>          
 
-              <fieldset className="pure-group">
+              <fieldset>
                 <label htmlFor="comments">Questions/Comments</label>
                 <textarea id="comments" name="comments" rows="10"
                 placeholder="Have any questions or comments..."></textarea>
