@@ -23,9 +23,9 @@ class Form extends Component {
                 <input id="rsvp" type="radio" name="rsvp" value="No" /> <label htmlFor="rsvp">No, will celebrate in spirit</label>
               </fieldset>
 
-              <fieldset class="pure-group">
-                <label for="guestCount">No. of Guests Attending</label>
-                <input required id="guestCount" type="number" name="guestCount" value="1" />
+              <fieldset className="pure-group">
+                <label htmlFor="guestCount">No. of Guests Attending</label>
+                <input required id="guestCount" type="number" name="guestCount" defaultValue="1" />
               </fieldset>              
               
               <fieldset className="pure-group">
@@ -35,8 +35,8 @@ class Form extends Component {
 
               <fieldset className="pure-group">
                 <label htmlFor="email">Email Address</label>
-                <input id="email" name="email" type="email" value=""
-                required placeholder="your.name@email.com"/>
+                <input required id="email" name="email" type="email" defaultValue=""
+                placeholder="your.name@email.com"/>
                 <span className="email-invalid" style={{display: 'none'}}>
                   Must be a valid email address</span>
               </fieldset>
@@ -70,7 +70,6 @@ class Form extends Component {
               <h2><em>Thanks</em> for RSVPing!
                 We look forward to celebrating with you!</h2>
             </div>
-
           </form>
 
           {/*Submit the Form to Google Using AJAX*/}
