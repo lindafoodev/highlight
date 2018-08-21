@@ -227,8 +227,6 @@ body {
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
 }
 
@@ -329,6 +327,33 @@ a .logo:active {
   1px -1px 0 #fff,
   -1px 1px 0 #fff,
   1px 1px 0 #fff;
+}
+
+/*--button---*/
+.btn-rsvp {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ffb246;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px #999;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+}
+
+.btn-rsvp:hover {background-color: #f89d26}
+
+.btn-rsvp:active {
+  background-color: #c07007e1;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
 }
 
 @media only screen and (min-width: 640px) {

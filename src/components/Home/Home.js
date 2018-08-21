@@ -1,5 +1,6 @@
 import React from 'react';
 import Countdown from '../Countdown/Countdown';
+import Button from '../Button/Button';
 
 const amazon = require('../images/babyregistryamazon.png');
 const bbb = require('../images/buybuybabylogo.png');
@@ -87,9 +88,10 @@ export default class Home extends React.Component {
                     <p className='section-text emphasis-text'>550 Moreland Way</p>
                     <p className='section-text emphasis-text'>Santa Clara, Ca 95054</p>
                     <p className='section-text break-text'>Hosted by Olivia & Linda</p>
-                    <p className='break-text attention-text'>Regrets only</p>
+                    {/* <p className='break-text attention-text'>Regrets only</p>
                     <p className='section-text'>to Linda</p> 
-                    <p className='section-text'>713 822 4934</p>
+                    <p className='section-text'>713 822 4934</p> */}
+                    <Button class={'btn-rsvp'} handleClick={ () => alert('hi')} btnTxt={'RSVP'}/>
                     <p className='break-text'>Registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
                 </div>
             </div>
