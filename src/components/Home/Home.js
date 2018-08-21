@@ -1,6 +1,7 @@
 import React from 'react';
 import Countdown from '../Countdown/Countdown';
 import Button from '../Button/Button';
+import Form from '../Form/Form';
 
 const amazon = require('../images/babyregistryamazon.png');
 const bbb = require('../images/buybuybabylogo.png');
@@ -102,6 +103,7 @@ export default class Home extends React.Component {
                         <p className='break-text emphasis-text'>Date</p>
                         <p className='section-text emphasis-text'>Sunday, September 16th, 2018</p>
                         <p className='section-text emphasis-text'>2:00 pm to 6:00 pm</p>
+                        <Form />
                         <Button class={'btn-submit hvr-grow'} handleClick={ () => alert('hi')} btnTxt={'Submit'}/>
                         <p className='break-text emphasis-text'>Clubhouse</p>
                         <p className='section-text emphasis-text'>550 Moreland Way</p>
