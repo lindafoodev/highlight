@@ -8,10 +8,8 @@ class Form extends Component {
         <form autoComplete="off" className="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
           action="https://script.google.com/macros/s/AKfycbzyU8kcpTIvBC5neAipdHlJTZvJkqfruDIaH3pDIw2MS2IPgNU/exec">
             {/* <!-- change the form action to your script url --> */}
-            <!--input id must be honeypot or else it wont work-->
-            <label className="sr-only">Keep this field blank</label>
+            {/* <!--input id must be honeypot or else it wont work--> */}
             <input id="honeypot" type="text" name="honeypot" defaultValue="" />
-            <!--the rest of your form-->
 
             <div className="form-elements">
               <fieldset className="pure-group">

@@ -1,10 +1,12 @@
 (function() {
   function validEmail(email) {
+    console.log('validEmail');
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
   }
 
   function validateHuman(honeypot) {
+    console.log('validateHuman');
     if (honeypot) {  //if hidden form filled up
       console.log("Robot Detected!");
       return true;
@@ -15,6 +17,7 @@
 
   // get all data in form and return object
   function getFormData(form) {
+    console.log('getFormData');
     var elements = form.elements;
 
     var fields = Object.keys(elements).filter(function(k) {
@@ -59,7 +62,8 @@
     return formData;
   }
 
-  function handleFormSubmit(event) {  // handles form submit without any jquery
+  function handleFormSubmit(event) {
+    console.log('handleFormSubmit');  // handles form submit without any jquery
     event.preventDefault();           // we are submitting via xhr below
     var form = event.target;
     var data = getFormData(form);         // get the values submitted in the form
@@ -104,6 +108,7 @@
   }
   
   function loaded() {
+    console.log('loaded');
     console.log("Contact form submission handler loaded successfully.");
     // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
@@ -114,6 +119,7 @@
   document.addEventListener("DOMContentLoaded", loaded, false);
 
   function disableAllButtons(form) {
+    console.log('disableAllButtons');
     var buttons = form.querySelectorAll("button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
