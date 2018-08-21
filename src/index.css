@@ -356,13 +356,18 @@ a .logo:active {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
+  color: #000;
   background-color: #ffb246;
   border: none;
   border-radius: 12px;
   box-shadow: 0 6px #999;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
+  text-shadow: /*outline text*/
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
 }
 
 .btn-rsvp:hover,
