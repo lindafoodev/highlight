@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '../Button/Button';
 
 class Form extends Component {
   render() {
@@ -61,8 +62,9 @@ class Form extends Component {
                 placeholder="Have any questions or comments..."></textarea>
               </fieldset>              
 
-              <button className="button-success pure-button button-xlarge">
-                <i className="fa fa-paper-plane"></i>&nbsp;Send</button>
+              <Button class={'btn-submit hvr-grow button-success pure-button button-xlarge'} handleClick={() => ''} btnTxt={'Submit'}/>
+              {/* <button className="button-success pure-button button-xlarge">
+                <i className="fa fa-paper-plane"></i>&nbsp;Send</button> */}
             </div>
 
             {/* <!-- Customise the Thankyou Message People See when they submit the form: --> */}
