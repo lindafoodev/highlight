@@ -291,7 +291,7 @@ a .logo:hover,
 a .logo:focus,
 a .logo:active {
   transform: scale(1.1);
-  box-shadow: 0 0 50px rgba(33,33,33,.2); 
+  box-shadow: 0 0 50px rgb(255, 255, 255); 
 }
 
 .registry-links {
@@ -346,7 +346,8 @@ a .logo:active {
 }
 
 /*--button---*/
-.btn-rsvp {
+.btn-rsvp, 
+.btn-submit {
   margin-top: 10px;
   display: inline-block;
   padding: 15px 25px;
@@ -364,9 +365,13 @@ a .logo:active {
   font-weight: bold;
 }
 
-.btn-rsvp:hover {background-color: #f89d26}
+.btn-rsvp:hover,
+.btn-submit:hover {
+  background-color: #f89d26
+}
 
-.btn-rsvp:active {
+.btn-rsvp:active,
+.btn-submit:hover {
   background-color: #c07007e1;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
