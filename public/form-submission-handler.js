@@ -87,8 +87,8 @@
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
-          console.log(xhr.status, xhr.statusText);
-          console.log(xhr.responseText);
+          // console.log(xhr.status, xhr.statusText);
+          // console.log(xhr.responseText);
           var formElements = form.querySelector(".form-elements");
           var rsvpElements = form.querySelector(".rsvp-message");
           var noticeElements = form.querySelector(".notice-message");
