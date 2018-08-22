@@ -218,7 +218,7 @@ body {
 }
 
 .modalDialog > div {
-	width: 95%;
+	width: 75%;
 	position: relative;
 	margin: 10% auto;
   padding: 8px 20px 24px 20px;
