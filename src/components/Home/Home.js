@@ -109,7 +109,7 @@ export default class Home extends React.Component {
                     <div className='theme-color-4'>
                         <a href='#close' title='Close' className='close'>X</a>
                         <h2 className='style-text higher-emphasis'>Countdown</h2>
-                        <p className='style-text break-text'>Baby Awika</p>
+                        <p className='style-text break-text'>Baby Agarwal</p>
                         <p className='section-text'>arrives in</p>
                         <Countdown date={`${year}-10-18T00:00:00`} />
                         <p className='break-text'>on October 18th, 2018</p>
