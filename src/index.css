@@ -7,10 +7,6 @@ black: #000
 overlay-green: #6ad380
 overlay-hide-greyish: #d6dbe0
 */
-html {
-  overflow-y: scroll;
-}
-
 ::-webkit-scrollbar {
     width: 0;
     background: transparent; /* make scrollbar transparent */
@@ -25,6 +21,7 @@ body {
 }
 
 .background {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
