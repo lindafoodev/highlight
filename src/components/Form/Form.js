@@ -44,7 +44,7 @@ class Form extends Component {
 
               <fieldset>
                 <label htmlFor="guestCount">No. of Guests With You</label>
-                <input id="guestCount" type="number" min="1" max="10" title="Input a valid number" name="guestCount" defaultValue="0" />
+                <input id="guestCount" type="number" min="0" max="10" title="Input a valid number" name="guestCount" defaultValue="0" />
               </fieldset>              
               
               <fieldset>
