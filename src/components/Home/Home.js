@@ -25,7 +25,7 @@ export default class Home extends React.Component {
                         </div>
                         <div className='box-container box-container-with-content theme-color-2 col-4'>
                             <div className='inner-box-bg m2n1'></div>
-                            <div className='overlay'><a href='#event' className='higher-emphasis hvr-grow style-text'>Event</a></div>
+                            <div className='overlay overlay-faded'><a href='#event' className='higher-emphasis hvr-grow style-text'>Event</a></div>
                         </div>
                         <div className='hidden-on-mobile box-container theme-color-3 col-4'>
                             <div className='inner-box-bg m3n1'></div>
@@ -39,11 +39,11 @@ export default class Home extends React.Component {
                         </div>
                         <div className='box-container box-container-with-content theme-color-1 col-4'>
                             <div className='inner-box-bg m2n2'></div>
-                            <div className='overlay'><a href='#registry' className='higher-emphasis hvr-grow style-text'>Registry</a></div>
+                            <div className='overlay overlay-faded'><a href='#registry' className='higher-emphasis hvr-grow style-text'>Registry</a></div>
                         </div>
                         <div className='box-container box-container-with-content theme-color-2 col-4'>
                             <div className='inner-box-bg m3n2'></div>
-                            <div className='overlay'><a href='#rsvp' className='higher-emphasis hvr-grow style-text'>RSVP</a></div>
+                            <div className='overlay overlay-faded'><a href='#rsvp' className='higher-emphasis hvr-grow style-text'>RSVP</a></div>
                         </div>
                     </div>
                     <div className='column'>
@@ -53,7 +53,7 @@ export default class Home extends React.Component {
                         </div>
                         <div className='box-container box-container-with-content theme-color-3 col-4'>
                             <div className='inner-box-bg m2n3'></div>
-                            <div className='overlay'><a href='#countdown' className='higher-emphasis hvr-grow style-text'>Countdown</a></div>
+                            <div className='overlay overlay-faded'><a href='#countdown' className='higher-emphasis hvr-grow style-text'>Countdown</a></div>
                         </div>
                         <div className='hidden-on-mobile box-container theme-color-1 col-4'>
                             <div className='inner-box-bg m3n3'></div>
