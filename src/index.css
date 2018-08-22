@@ -221,10 +221,10 @@ body {
 }
 
 .modalDialog > div {
-	width: 45%;
+	width: 95%;
 	position: relative;
 	margin: 10% auto;
-  padding: 5px 20px 13px 20px;
+  padding: 8px 20px 24px 20px;
   border: #fff 2px solid;
   opacity: 1;
   text-align: center;
@@ -291,7 +291,7 @@ a .logo:hover,
 a .logo:focus,
 a .logo:active {
   transform: scale(1.1);
-  box-shadow: 0 0 50px rgba(33,33,33,.2); 
+  box-shadow: 0 0 50px rgb(255, 255, 255); 
 }
 
 .registry-links {
@@ -346,7 +346,8 @@ a .logo:active {
 }
 
 /*--button---*/
-.btn-rsvp {
+.btn-rsvp, 
+.btn-submit {
   margin-top: 10px;
   display: inline-block;
   padding: 15px 25px;
@@ -355,24 +356,140 @@ a .logo:active {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
+  color: #000;
   background-color: #ffb246;
   border: none;
   border-radius: 12px;
   box-shadow: 0 6px #999;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
+  text-shadow: /*outline text*/
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
 }
 
-.btn-rsvp:hover {background-color: #f89d26}
+.btn-rsvp:hover,
+.btn-submit:hover {
+  background-color: #f89d26
+}
 
-.btn-rsvp:active {
+.btn-rsvp:active,
+.btn-submit:hover {
   background-color: #c07007e1;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
 
+/* --- Form --- */
+.form-elements {
+  width: 95%;
+  height: auto;
+  padding: 24px 0 24px 0;
+  margin-top: 24px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: #666;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+fieldset {
+  border: 0;
+  text-align: left;
+}
+
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(195, 195, 195);
+  background-color: rgb(245, 245, 245);
+  height: 5%;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(0, 0, 0);
+  line-height: 40px;
+  text-align: left;
+  margin-top: -5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  font-family: 'EB Garamond', serif;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+label {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+label:not(.rsvp) {
+  text-align: left;
+  margin-left: 24px;
+}
+
+.block{
+  margin: auto;
+  text-align: center;
+}
+
+label .rsvp {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3%;
+}
+
+input[type="radio"]{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.radio{
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  border:4px solid #ccc;
+  background:#fff;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+}
+
+.radio:checked{
+  border:5px solid #4099ff;
+  background: #4099ff;
+}
+
+input[type="radio"] label {
+  margin: 10px 10px 0px 5px;
+}
+
+.direction-text {
+  font-weight: normal;
+  font-size: 12px;
+  color: rgb(111, 111, 111);
+  line-height: 40px;
+  text-align: left;
+  padding-left: 5px;
+}
+
 @media only screen and (min-width: 640px) {
+  .modalDialog > div {
+    width: 45%
+  }
+
   .box {
     flex-direction: row;
   }
@@ -391,6 +508,11 @@ a .logo:active {
 
   .modalDialog > div {
     margin: 5% auto;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 75%;
+    display: block;
   }
 }
 

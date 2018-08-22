@@ -1,6 +1,6 @@
 import React from 'react';
 import Countdown from '../Countdown/Countdown';
-import Button from '../Button/Button';
+import Form from '../Form/Form';
 
 const amazon = require('../images/babyregistryamazon.png');
 const bbb = require('../images/buybuybabylogo.png');
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
                         </div>
                         <div className='box-container box-container-with-content theme-color-2 col-4'>
                             <div className='inner-box-bg m2n1'></div>
-                            <div className='overlay'><a href='#registry' className='higher-emphasis hvr-grow style-text'>Registry</a></div>
+                            <div className='overlay'><a href='#event' className='higher-emphasis hvr-grow style-text'>Event</a></div>
                         </div>
                         <div className='hidden-on-mobile box-container theme-color-3 col-4'>
                             <div className='inner-box-bg m3n1'></div>
@@ -39,11 +39,11 @@ export default class Home extends React.Component {
                         </div>
                         <div className='box-container box-container-with-content theme-color-1 col-4'>
                             <div className='inner-box-bg m2n2'></div>
-                            <div className='overlay'><a href='#event' className='higher-emphasis hvr-grow style-text'>Event Details RSVP</a></div>
+                            <div className='overlay'><a href='#registry' className='higher-emphasis hvr-grow style-text'>Registry</a></div>
                         </div>
-                        <div className='hidden-on-mobile box-container theme-color-2 col-4'>
+                        <div className='box-container box-container-with-content theme-color-2 col-4'>
                             <div className='inner-box-bg m3n2'></div>
-                            <div className='overlay-hide'></div>
+                            <div className='overlay'><a href='#rsvp' className='higher-emphasis hvr-grow style-text'>RSVP</a></div>
                         </div>
                     </div>
                     <div className='column'>
@@ -62,7 +62,7 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div id='registry' className='modalDialog'>
-                    <div className='theme-color-1'>
+                    <div className='theme-color-2'>
                         <a href='#close' title='Close' className='close'>X</a>
                         <h2 className='style-text higher-emphasis'>Registry</h2>
                         <div className='registry-links'>
@@ -88,13 +88,25 @@ export default class Home extends React.Component {
                         <p className='break-text emphasis-text'>Clubhouse</p>
                         <p className='section-text emphasis-text'>550 Moreland Way</p>
                         <p className='section-text emphasis-text'>Santa Clara, Ca 95054</p>
-                        <p className='section-text break-text'>Hosted by Olivia & Linda</p>
-                        <Button class={'btn-rsvp hvr-grow'} handleClick={ () => alert('hi')} btnTxt={'RSVP'}/>
+                        <p className='attention-text section-text break-text'>Hosted by Olivia & Linda</p>
+                        <a href='#rsvp' className='btn-submit hvr-grow'>RSVP</a>
                         <p className='break-text'>Registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
                     </div>
                 </div>
+                <div id='rsvp' className='modalDialog'>
+                    <div className='theme-color-3'>
+                        <a href='#close' title='Close' className='close'>X</a>
+                        <h2 className='style-text higher-emphasis'>RSVP</h2>
+                        <p className='break-text emphasis-text attention-text'>Baby Shower Date</p>
+                        <p className='section-text emphasis-text'>Sunday, September 16th, 2018</p>
+                        <p className='section-text emphasis-text'>2:00 pm to 6:00 pm</p>
+                        <Form />
+                        {/* <p className='break-text'>We look forward to</p>
+                        <p className='section-text'>celebrating with you!</p> */}
+                    </div>
+                </div>
                 <div id='countdown' className='modalDialog'>
-                    <div className='theme-color-1'>
+                    <div className='theme-color-4'>
                         <a href='#close' title='Close' className='close'>X</a>
                         <h2 className='style-text higher-emphasis'>Countdown</h2>
                         <p className='style-text break-text'>Baby Awika</p>
