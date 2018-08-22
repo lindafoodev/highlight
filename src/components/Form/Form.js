@@ -6,7 +6,7 @@ class Form extends Component {
     return (
       <div>
         <form autoComplete="off" className="gform" method="POST" data-email="example@email.net"
-          action="https://script.google.com/macros/s/AKfycbzyU8kcpTIvBC5neAipdHlJTZvJkqfruDIaH3pDIw2MS2IPgNU/exec">
+          action="https://script.google.com/macros/s/AKfycbwounh2zqU4VbebFCj9dOKxAfLwAYQFcTAiStnHGaFV0Zq4oyGJ/exec">
             {/* <!-- change the form action to your script url --> */}
 
             <div className='rsvp-message'>
