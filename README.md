@@ -3,7 +3,31 @@
 This is a repo for my personal fun projects celebrating life events for friends. 
 
 Currently, it contains: 
-* a personalized website for a baby shower (FE Only - JavaScript/React, HTML/CSS)
+* Baby Awika - a personalized single-page responsive website for a baby shower (FE Only - JavaScript/React, HTML/CSS, Google Sheet API)
+
+## Baby Awika
+* Project Wins
+  * Utilized Google Sheet API to auto-send an email and update a Google Sheet with RSVP attendee details once form submitted 
+  * Set-up and used MailChimp to send evite
+  * Created HTML Email
+  * Heavier customization and troubleshooting of front-end, in particular:
+    * overlay
+    * modals
+    * radio buttons
+  * Implemented Flexbox
+  * Implemented Countdown
+  * Utilized graphics software to customize image
+
+* Project Wishes
+  - [ ] Photo modal
+  - [ ] Refactor
+  - [ ] Make form more dynamic ie. when radio selected, only some fieldsets appear.
+
+* Credits
+  * Flat Square Animals - Andrey Bzhitskikh
+  * React Countdown Tutorial - Kristin Baumann
+  * Google Script Tutorial - Martin Hawksey
+
 
 # Scripts
 
