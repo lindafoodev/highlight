@@ -20,30 +20,31 @@ class Form extends Component {
             <div className="form-elements">
               <fieldset>
                 <legend>Full Name</legend>
-                <label htmlFor="first">First Name</label>
-                <input required id="first" name="first" placeholder="Jane" />
-                <label htmlFor="last">Last Name</label>
-                <input required id="last" name="last" placeholder="Doe" />
+                <label htmlFor="first">First Name</label><span className={"direction-text"}>Required</span>
+                <input required id="first" type="text" name="first" placeholder="Jane" />
+                <label htmlFor="last">Last Name</label><span className={"direction-text"}>Required</span>
+                <input required id="last" type="text" name="last" placeholder="Doe" />
+              </fieldset>
+
+              <fieldset className="block">
+              <legend>Can you attend?<span className={"direction-text"}>Required</span></legend>
+              <input id="rsvp" className='radio' type="radio" name="rsvp" value="Yes" required/> <label className="rsvp" htmlFor="rsvp">Yes, woohoo!</label>
+              <input id="rsvp" className='radio' type="radio" name="rsvp" value="No" /> <label className="rsvp" htmlFor="rsvp">No, there in spirit</label>
               </fieldset>
 
               <fieldset>
-                <legend>Can you attend?</legend>
-                <input id="rsvp" type="radio" name="rsvp" value="Yes" required/> <label htmlFor="rsvp">Yes, will celebrate in person</label>
-                <input id="rsvp" type="radio" name="rsvp" value="No" /> <label htmlFor="rsvp">No, will celebrate in spirit</label>
-              </fieldset>
-
-              <fieldset>
-                <label htmlFor="guestCount">No. of Guests Attending</label>
-                <input required id="guestCount" type="text" pattern="[0-9]*" title="Input a valid number" name="guestCount" defaultValue="1" />
+                <label htmlFor="guestCount">No. of Guests Attending</label><span className={"direction-text"}>Required</span>
+                <input required id="guestCount" type="number" title="Input a valid number" name="guestCount" defaultValue="1" />
               </fieldset>              
               
               <fieldset>
-                <label htmlFor="otherGuests">Other Guest Names</label>
-                <input id="otherGuests" name="otherGuests" placeholder="Shiwani, Animesh" />
+                <label htmlFor="otherGuests">Other Guest Names</label><span className={"direction-text"}>Optional</span>
+                <input id="otherGuests" type="text" name="otherGuests" placeholder="Shiwani, Animesh" />
               </fieldset>  
 
               <fieldset>
-                <label htmlFor="email">Email Address</label>
+                <legend>Contact Info</legend>
+                <label htmlFor="email">Email Address</label><span className={"direction-text"}>Required</span>
                 <input required id="email" name="email" type="email" defaultValue=""
                 placeholder="your.name@email.com"/>
                 <span className="email-invalid" style={{display: 'none'}}>
@@ -52,21 +53,21 @@ class Form extends Component {
 
               <fieldset>
                 <legend>Mailing Address</legend>
-                <label htmlFor="address1">Address 1</label>
-                <input required id="address1" name="address1" placeholder="123 Safari Blvd" />
-                <label htmlFor="address2">Address 2</label>
-                <input id="address2" name="address2" placeholder="Suite 1A" />
-                <label htmlFor="city">City</label>
-                <input required id="city" name="city" placeholder="San Francisco" />
-                <label htmlFor="state">State</label>
-                <input required id="state" name="state" placeholder="CA" />
-                <label htmlFor="zip">Zip</label>
-                <input required id="zip" name="zip" placeholder="12345" />
+                <label htmlFor="address1">Address 1</label><span className={"direction-text"}>Required</span>
+                <input required type="text" id="address1" name="address1" placeholder="123 Safari Blvd" />
+                <label htmlFor="address2">Address 2</label><span className={"direction-text"}>Optional</span>
+                <input id="address2" type="text" name="address2" placeholder="Suite 1A" />
+                <label htmlFor="city">City</label><span className={"direction-text"}>Required</span>
+                <input required id="city" type="text" name="city" placeholder="San Francisco" />
+                <label htmlFor="state">State</label><span className={"direction-text"}>Required</span>
+                <input required type="text" id="state" name="state" placeholder="CA" />
+                <label htmlFor="zip">Zip</label><span className={"direction-text"}>Required</span>
+                <input required type="text" pattern="[0-9]*" id="zip" name="zip" placeholder="12345" />
               </fieldset>          
 
               <fieldset>
-                <label htmlFor="comments">Questions/Comments</label>
-                <textarea id="comments" name="comments" rows="10"
+              <legend>Message<span className={"direction-text"}>Optional</span></legend>
+                <textarea id="comments" name="comments" rows="3"
                 placeholder="Have any questions or comments..."></textarea>
               </fieldset>              
 
