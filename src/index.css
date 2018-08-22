@@ -434,7 +434,6 @@ label {
 
 label:not(.rsvp) {
   text-align: left;
-  margin-left: 24px;
 }
 
 .block{
@@ -482,6 +481,10 @@ input[type="radio"] label {
   padding-left: 5px;
 }
 
+textarea {
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 640px) {
   .modalDialog > div {
     width: 45%
@@ -510,6 +513,10 @@ input[type="radio"] label {
   input[type="text"], input[type="email"], input[type="number"], textarea {
     width: 75%;
     display: block;
+  }
+
+  label:not(.rsvp) {
+    margin-left: 32px;
   }
 }
 
