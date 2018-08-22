@@ -105,9 +105,7 @@ body {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
   transition: .5s ease;
-  background-color: #6ad380;
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -115,6 +113,11 @@ body {
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
+  opacity: .8;
+}
+
+.overlay-faded {
+  background-color: rgba(255, 255, 255, .4);
 }
 
 .overlay-hide {
@@ -130,16 +133,8 @@ body {
   background-color: #d6dbe0;
 }
 
-.box:hover .overlay {
-  opacity: .9;
-}
-
 .box:hover .overlay-hide{
   opacity: .4;
-}
-
-.box-container:hover .overlay {
-  opacity: 1;
 }
 
 /* --- inner box --- */
@@ -218,7 +213,7 @@ body {
 }
 
 .modalDialog > div {
-	width: 95%;
+	width: 75%;
 	position: relative;
 	margin: 10% auto;
   padding: 8px 20px 24px 20px;
@@ -517,6 +512,19 @@ textarea {
 
   label:not(.rsvp) {
     margin-left: 32px;
+  }
+
+  .box:hover .overlay {
+    opacity: .9;
+  }
+
+  .overlay {
+    background-color: #6ad380;
+    opacity: 0;
+  }
+
+  .box-container:hover .overlay {
+    opacity: 1;
   }
 }
 
