@@ -10,6 +10,7 @@ class Form extends Component {
             {/* <!-- change the form action to your script url --> */}
 
             <div className='rsvp-message'>
+                <p className='break-text'>Drinks and light snacks provided</p>
                 <p className='break-text'>Please kindly respond by</p>
                 <p className='section-text'>September 9th</p>
             </div>
