@@ -368,7 +368,7 @@ a .logo:active {
 }
 
 .btn-rsvp:active,
-.btn-submit:hover {
+.btn-submit:active {
   background-color: #c07007e1;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
