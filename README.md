@@ -3,11 +3,13 @@
 This is a repo for my personal fun projects celebrating life events for friends. 
 
 Currently, it contains: 
-* Baby Agarwal - a personalized single-page responsive website for a baby shower (FE Only - JavaScript/React, HTML/CSS, Google Sheet API)
+* Baby Agarwal - a personalized single-page responsive landing page for a baby shower where users can view event details, shower registry, due date countdown, and RSVP. Serverless - RSVP data is auto-collected via Google Sheet API and confirmation auto-sent to email. 
+ * Front-End, Serverless - JavaScript/React, HTML/CSS, Google Sheet API
 
-## Baby Agarwal
+## Baby Agarwal - https://babyagarwal.netlify.com
 * Project Wins
   * Utilized Google Sheet API to auto-send an email and update a Google Sheet with RSVP attendee details once form submitted 
+  * Pragmatic and quick shipment of features
   * Set-up and used MailChimp to send evite
   * Created HTML Email
   * Heavier customization and troubleshooting of front-end, in particular:
@@ -20,8 +22,8 @@ Currently, it contains:
   * Utilized graphics software to customize image
 
 * Project Wishes
-  - [ ] Photo modal
-  - [ ] Refactor
+  - [ ] Photo slideshow modal
+  - [ ] Refactor and add additional tests
   - [ ] Make form more dynamic ie. when radio selected, only some fieldsets appear.
 
 * Credits
