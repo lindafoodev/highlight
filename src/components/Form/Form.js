@@ -54,16 +54,16 @@ class Form extends Component {
 
               <fieldset>
                 <legend>Mailing Address</legend>
-                <label htmlFor="address1">Address 1</label>
-                <input type="text" id="address1" name="address1" placeholder="123 Safari Blvd" />
+                <label htmlFor="address1">Address 1</label><span className={"direction-text"}>Required</span>
+                <input  required type="text" id="address1" name="address1" placeholder="123 Safari Blvd" />
                 <label htmlFor="address2">Address 2</label>
                 <input id="address2" type="text" name="address2" placeholder="Suite 1A" />
-                <label htmlFor="city">City</label>
-                <input id="city" type="text" name="city" placeholder="San Francisco" />
-                <label htmlFor="state">State</label>
-                <input type="text" id="state" name="state" placeholder="CA" />
-                <label htmlFor="zip">Zip</label>
-                <input type="text" pattern="[0-9]*" id="zip" name="zip" placeholder="12345" />
+                <label htmlFor="city">City</label><span className={"direction-text"}>Required</span>
+                <input required id="city" type="text" name="city" placeholder="San Francisco" />
+                <label htmlFor="state">State</label><span className={"direction-text"}>Required</span>
+                <input  required type="text" id="state" name="state" placeholder="CA" />
+                <label htmlFor="zip">Zip</label><span className={"direction-text"}>Required</span>
+                <input  required type="text" pattern="[0-9]*" id="zip" name="zip" placeholder="12345" />
               </fieldset>          
 
               <fieldset>
