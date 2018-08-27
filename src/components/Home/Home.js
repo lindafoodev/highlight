@@ -90,7 +90,7 @@ export default class Home extends React.Component {
                         <p className='section-text emphasis-text'>Santa Clara, Ca 95054</p>
                         <p className='attention-text section-text break-text'>Hosted by Olivia, Linda & Tulika</p>
                         <p className='break-text'>Drinks and light snacks provided</p>
-                        <a href='#rsvp' className='btn-submit hvr-grow'>RSVP</a>
+                        <a href='#rsvp' className='noselect btn-submit hvr-grow'>RSVP</a>
                         <p className='break-text'>Registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
                     </div>
                 </div>
