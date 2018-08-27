@@ -33,9 +33,9 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className='column'>
-                        <div className='hidden-on-mobile box-container theme-color-3 col-4'>
+                        <div className='box-container box-container-with-content theme-color-3 col-4'>
                             <div className='inner-box-bg m1n2'></div>
-                            <div className='overlay-hide'></div>
+                            <div className='overlay overlay-faded'><a href='#photos' className='more_link higher-emphasis hvr-grow style-text'>Photos</a></div>
                         </div>
                         <div className='box-container box-container-with-content theme-color-1 col-4'>
                             <div className='inner-box-bg m2n2'></div>
@@ -115,6 +115,12 @@ export default class Home extends React.Component {
                         <Countdown date={`${year}-10-18T00:00:00`} />
                         <p className='break-text'>on October 18th, 2018</p>
                         {/*Midnight of 17th to 18th Oct*/}
+                    </div>
+                </div>
+                <div id='photos' className='modalDialog'>
+                    <div className='theme-color-1'>
+                        <a href='#close' title='Close' className='close'>X</a>
+                        <h2 className='style-text higher-emphasis'>Photos</h2>
                     </div>
                 </div>
             </div>
