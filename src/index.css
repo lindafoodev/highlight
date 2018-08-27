@@ -137,6 +137,18 @@ body {
   opacity: .4;
 }
 
+/* entire box is anchored rather than just anchor text - UX*/
+.box-container .more_link { 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* --- inner box --- */
 
 .inner-box-bg {
