@@ -30,7 +30,7 @@ Currently, it contains:
   * Flat Square Animals - Andrey Bzhitskikh
   * React Countdown Tutorial - Kristin Baumann
   * Google Script Tutorial - Martin Hawksey
-
+  * Build An Image Slider With React & ES6 - Daniel Zuzevich
 
 # Scripts
 
