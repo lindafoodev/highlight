@@ -532,11 +532,22 @@ textarea {
   display: inline-block;
   height: 100%;
   width: 100%;
-  background-image: url(../src/components/images/photo3.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  
+}
+
+/*solution to image not loading - use dynamic class and create class in .css file rather than setting background-image url in react component*/
+.photo1 {
+  background-image: url(../src/components/images/photo1.jpg);
+}
+
+.photo2 {
+  background-image: url(../src/components/images/photo2.jpg);
+}
+
+.photo3 {
+  background-image: url(../src/components/images/photo3.jpg);
 }
 
 i {

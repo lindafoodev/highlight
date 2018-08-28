@@ -8,32 +8,30 @@ export default class Slideshow extends Component {
     super(props);
 
     this.state = {
-      images: ['photo1', 'photo2', 'photo3'],
+      images: ['photo1', 'photo2', 'photo3'], /*Needs to be updated when additional photos added to css file*/
       currentIndex: 0,
       translateValue: 0
     }
   }
 
   goToPrevSlide = () => {
-     //if at first slide
-     console.log('prev button clicked');
-     if(this.state.currentIndex === -0) {
+     //if at first slide, do nothing
+     if(this.state.currentIndex === 0) {
       return this.setState({
-        currentIndex: this.state.images.length - 1,
+        currentIndex: 0,
         translateValue: 0
       })
     }
 
     //width of current slide and subtract from current translate value to update translateValue property
     //setState will trigger re-render and reveal new image that was offscreen on left
-    this.setState(prevState => ({
-      currentIndex: prevState.currentIndex - 1,
-      translateValue: prevState.translateValue + -(this.slideWidth()) /*NEED TO TEST*/
-    }));
+    this.setState({
+      currentIndex: this.state.currentIndex - 1,
+      translateValue: this.state.translateValue + (this.slideWidth())
+    });
   }
 
   goToNextSlide = () => {
-    console.log('next button clicked');
     //if at last slide
     if(this.state.currentIndex === this.state.images.length - 1) {
       return this.setState({
@@ -51,7 +49,7 @@ export default class Slideshow extends Component {
   }
 
   slideWidth = () => {
-    return document.querySelector('.slide').clientWidth
+    return document.querySelector('.slide').clientWidth;
   }
 
   render() {
