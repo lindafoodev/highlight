@@ -15,10 +15,25 @@ export default class Slideshow extends Component {
   }
 
   goToPrevSlide = () => {
+     //if at first slide
+     console.log('prev button clicked');
+     if(this.state.currentIndex === -0) {
+      return this.setState({
+        currentIndex: this.state.images.length - 1,
+        translateValue: 0
+      })
+    }
 
+    //width of current slide and subtract from current translate value to update translateValue property
+    //setState will trigger re-render and reveal new image that was offscreen on left
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex - 1,
+      translateValue: prevState.translateValue + -(this.slideWidth()) /*NEED TO TEST*/
+    }));
   }
 
   goToNextSlide = () => {
+    console.log('next button clicked');
     //if at last slide
     if(this.state.currentIndex === this.state.images.length - 1) {
       return this.setState({

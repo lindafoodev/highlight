@@ -227,7 +227,7 @@ body {
 .modalDialog > div {
 	width: 75%;
 	position: relative;
-	margin: 10% auto;
+  margin: 5% auto;
   padding: 8px 20px 24px 20px;
   border: #fff 2px solid;
   opacity: 1;
@@ -504,19 +504,17 @@ textarea {
 }
 
 /* ---- Slideshow ---- */
-/* html, body, .app, .main {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-} */
 
-.slideModal > div{
-  height: 85%;
+.slideModal > div {
+  height: 100%;
+  padding: 24px 24px 48px 24px;
+  border: #fff 2px solid;
+  opacity: 1;
+  text-align: center;
 }
 
 .slideshow {
-  height: 100%;
+  height: 85%;
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -524,58 +522,44 @@ textarea {
   white-space: nowrap;
 }
 
-  .slideshow-wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
+.slideshow-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-    .slide {
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-    }
-/* 
-  .settings-icon {
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 99999999999999;
-    background: white;
-    border-radius: 50%;
-    padding: 5px;
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: url(../src/components/images/photo3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
 
-    path, polygon {
-      fill: black;
-    }
-  }
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
 
-  .settings {
-    background: rgba(0,0,0,0.75);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 999999999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.right-carrot {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
-    .menu {
-      width: 600px;
-      height: 350px;
-      background: white;
-
-      @media(max-width: 650px) {
-        width: 300px;
-      }
-    }
-  }
-} */
+.left-carrot {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 
 .right-arrow, .left-arrow {
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
+  opacity: .8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,70 +569,38 @@ textarea {
   transition: transform ease-in .1s;
 }
 
-  .right-arrow:hover, .left-arrow:hover {
-    transition: transform ease-in .1s;
-    transform: scale(1.1)
-}
-
-.cool-buttons {
-  background: black;
-  border: 2px solid white;
+.right-arrow:hover, .left-arrow:hover {
+  transition: transform ease-in .1s;
+  transform: scale(1.1)
 }
 
 .right-arrow {
   position: absolute;
-  top: 50%;
-  right: 25px;
+  top: 45%;
+  right: 10px;
   z-index: 999;
   color: #fff;
 }
-
-  .right-arrow img {
-    transform: translate(2px, 0);
-  }
-
-    .right-arrow img:focus {
-      outline: 0;
-    }
 
 .left-arrow {
   position: absolute;
-  top: 50%;
-  left: 25px;
+  top: 45%;
+  left: 10px;
   z-index: 999;
   color: #fff;
 }
-  .left-arrow img {
-    transform: translate(-2px, 0);
-  }
-    .left-arrow img:focus {
-      outline: 0;
-    }
-
-.dots-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 9999;
-  padding: 5px 0;
-}
-  .dot {
-    background: #222;
-    display: inline-block;
-    padding: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-
-  .active {
-    background: #fff;
-  }
 
 @media only screen and (min-width: 640px) {
   .modalDialog > div {
     width: 45%
+  }
+
+  .slideModal > div {
+    max-height: 85vh;
+  }
+  
+  .slideshow {
+    max-height: 85vh;
   }
 
   .box {
@@ -668,7 +620,7 @@ textarea {
   }
 
   .modalDialog > div {
-    margin: 5% auto;
+    margin: 2% auto;
   }
 
   input[type="text"], input[type="email"], input[type="number"], textarea {
