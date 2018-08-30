@@ -118,10 +118,9 @@ export default class Home extends React.Component {
                         {/*Midnight of 17th to 18th Oct*/}
                     </div>
                 </div>
-                <div id='photos' className='modalDialog slideModal'>
+                <div id='photos' className='modalSlide'>
                     <div className='theme-color-1'>
                         <a href='#close' title='Close' className='close'>X</a>
-                        {/* <h2 className='hidden-on-mobile style-text higher-emphasis'>Photos</h2> */}
                         <Slideshow />
                     </div>
                 </div>

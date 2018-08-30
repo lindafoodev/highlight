@@ -4,7 +4,7 @@ This is a repo for my personal fun projects celebrating life events for friends.
 
 Currently, it contains: 
 * Baby Agarwal - a personalized single-page responsive landing page for a baby shower where users can view event details, shower registry, due date countdown, and RSVP. Serverless - RSVP data is auto-collected via Google Sheet API and confirmation auto-sent to email. 
- * Front-End, Serverless - JavaScript/React, HTML/CSS, Google Sheet API
+  * Front-End, Serverless - JavaScript, React, HTML/CSS, Google Sheet API
 
 ## Baby Agarwal - https://babyagarwal.netlify.com
 * Project Wins
@@ -17,17 +17,23 @@ Currently, it contains:
     * modals
     * radio buttons
     * animation
+    * responsive
   * Implemented Flexbox
   * Implemented Countdown
   * Implemented Photo Carousel 
   * Utilized graphics software to customize image
     * background colors for icons
-    * resize images (960px x 600px)
-    * add background layer to portrait photos to maintain image size (resize height)
+    * resize images
+      * add background layer (960 x 600) to portrait photos to maintain image ratio on landscape view (resize portrait height to 600  - maintain aspect ratio) - default
+      * add background layer (450 x 600) to landscape photos to maintain image ratio on portrait view (resize landscape width to 450 - maintain aspect ratio) 
 
 * Project Wishes
   - [x] Photo slideshow modal
-  - [ ] Refactor and add additional tests
+  - [ ] Add arrow key interactivity on photo modal
+  - [ ] Add swipe interactivity on photo modal
+  - [ ] Refactor CSS
+  - [ ] Refactor React Components
+  - [ ] Add additional tests
   - [ ] Make form more dynamic ie. when radio selected, only some fieldsets appear.
 
 * Credits
