@@ -248,7 +248,8 @@ body {
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  z-index: 100000;
 }
 
 .close:hover { 
