@@ -503,11 +503,10 @@ textarea {
   margin-top: 10px;
 }
 
-/* ---- Slideshow ---- */
+/*---- Slideshow ----*/
 
 .slideModal > div {
   height: 45vh;
-  padding: 24px 24px 48px 24px;
   border: #fff 2px solid;
   opacity: 1;
   text-align: center;
@@ -624,14 +623,14 @@ i {
   background: #fff;
 }
 
+/*desktop*/
 @media only screen and (min-width: 640px) {
   .modalDialog > div {
     width: 45%
   }
 
   .slideModal > div {
-    min-height: 75vh;
-    max-height: 85vh;
+    height: 100vh;
   }
   
   .slideshow {
@@ -685,5 +684,43 @@ i {
   }
 }
 
+/*landscape, up to tablet width*/
+@media only screen and (orientation: landscape) 
+and (max-width: 1020px) {
+  .slideModal > div {
+    height: 100vh;
+  }
 
+  .modalDialog > div {
+    width: 85%;
+    margin: 2% auto;
+  }
 
+  .right-arrow {
+    bottom: 5%;
+  }
+
+  .left-arrow {
+    bottom: 5%;
+  }
+}
+
+/*portrait, up to tablet*/
+@media only screen and (orientation: portrait)
+and (max-width: 780px){
+  .slideModal > div {
+    height: 100vh;
+  }
+
+  .photo1 {
+    background-image: url(../src/components/images/photo1-portrait.jpg);
+  }
+
+  .photo2 {
+    background-image: url(../src/components/images/photo2-portrait.jpg);
+  }
+
+  .photo3 {
+    background-image: url(../src/components/images/photo3-portrait.jpg);
+  }
+}

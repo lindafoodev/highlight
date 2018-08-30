@@ -121,7 +121,7 @@ export default class Home extends React.Component {
                 <div id='photos' className='modalDialog slideModal'>
                     <div className='theme-color-1'>
                         <a href='#close' title='Close' className='close'>X</a>
-                        <h2 className='style-text higher-emphasis'>Photos</h2>
+                        {/* <h2 className='hidden-on-mobile style-text higher-emphasis'>Photos</h2> */}
                         <Slideshow />
                     </div>
                 </div>

@@ -26,10 +26,10 @@ export default class Slideshow extends Component {
 
     //width of current slide and subtract from current translate value to update translateValue property
     //setState will trigger re-render and reveal new image that was offscreen on left
-    this.setState({
+    this.setState(prevState => ({
       currentIndex: this.state.currentIndex - 1,
-      translateValue: this.state.translateValue + (this.slideWidth())
-    });
+      translateValue: prevState.translateValue + this.slideWidth()
+    }));
   }
 
   goToNextSlide = () => {
@@ -50,25 +50,25 @@ export default class Slideshow extends Component {
   }
 
   slideWidth = () => {
-    return document.querySelector('.slide').clientWidth;
+    return document.querySelector('.slide').clientWidth + 1;
   }
 
-  handleDotClick = i => {
-    if(i === this.state.currentIndex) return
+  // handleDotClick = i => {
+  //   if(i === this.state.currentIndex) return
 
-    if(i > this.state.currentIndex) {
-      return this.setState({
-        currentIndex: i,
-        translateValue: -(i * this.slideWidth())
-      })
-    }
-    else {
-      return this.setState({
-        currentIndex: i,
-        translateValue: this.state.translateValue + ((this.state.currentIndex - i) * (this.slideWidth()))
-      })
-    }
-  }
+  //   if(i > this.state.currentIndex) {
+  //     return this.setState({
+  //       currentIndex: i,
+  //       translateValue: -(i * this.slideWidth())
+  //     })
+  //   }
+  //   else {
+  //     return this.setState({
+  //       currentIndex: i,
+  //       translateValue: this.state.translateValue + ((this.state.currentIndex - i) * (this.slideWidth()))
+  //     })
+  //   }
+  // }
 
   render() {
     return (
