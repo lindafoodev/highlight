@@ -29,8 +29,9 @@ Currently, it contains:
 
 * Project Wishes
   - [x] Photo slideshow modal
-  - [ ] Add arrow key interactivity on photo modal
-  - [ ] Add swipe interactivity on photo modal
+  - [ ] Swipe interactivity on photo modal
+  - [ ] Arrow key interactivity on photo modal
+  - [ ] Active photo indicator on photo modal
   - [ ] Refactor CSS
   - [ ] Refactor React Components
   - [ ] Add additional tests
