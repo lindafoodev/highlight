@@ -137,6 +137,18 @@ body {
   opacity: .4;
 }
 
+/* entire box is anchored rather than just anchor text - UX*/
+.box-container .more_link { 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* --- inner box --- */
 
 .inner-box-bg {
@@ -215,7 +227,7 @@ body {
 .modalDialog > div {
 	width: 75%;
 	position: relative;
-	margin: 10% auto;
+  margin: 5% auto;
   padding: 8px 20px 24px 20px;
   border: #fff 2px solid;
   opacity: 1;
@@ -374,6 +386,17 @@ a .logo:active {
   transform: translateY(4px);
 }
 
+/*disable text selection highlighting */
+.noselect { 
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
 /* --- Form --- */
 .form-elements {
   width: 95%;
@@ -480,9 +503,142 @@ textarea {
   margin-top: 10px;
 }
 
+/*---- Slideshow ----*/
+
+.slideModal > div {
+  height: 45vh;
+  border: #fff 2px solid;
+  opacity: 1;
+  text-align: center;
+}
+
+.slideshow {
+  height: 85%;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slideshow-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*solution to image not loading - use dynamic class and create class in .css file rather than setting background-image url in react component*/
+.photo1 {
+  background-image: url(../src/components/images/photo1.jpg);
+}
+
+.photo2 {
+  background-image: url(../src/components/images/photo2.jpg);
+}
+
+.photo3 {
+  background-image: url(../src/components/images/photo3.jpg);
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right-carrot {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left-carrot {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right-arrow, .left-arrow {
+  height: 32px;
+  width: 32px;
+  opacity: .7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in .1s;
+}
+
+.right-arrow:hover, .left-arrow:hover {
+  transition: transform ease-in .1s;
+  transform: scale(1.1)
+}
+
+.right-arrow {
+  position: absolute;
+  bottom: 25%;
+  right: 35%;
+  z-index: 999;
+  color: #fff;
+}
+
+.left-arrow {
+  position: absolute;
+  bottom: 25%;
+  left: 35%;
+  z-index: 999;
+  color: #fff;
+}
+
+/* --- Dots --- */
+.dots-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+  padding: 5px 0; 
+}
+
+.dot {
+  background: #222;
+  display: inline-block;
+  padding: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.active {
+  background: #fff;
+}
+
+/*desktop*/
 @media only screen and (min-width: 640px) {
   .modalDialog > div {
     width: 45%
+  }
+
+  .slideModal > div {
+    height: 100vh;
+  }
+  
+  .slideshow {
+    max-height: 85vh;
+  }
+
+  .right-arrow, .left-arrow {
+    bottom: 10%;
   }
 
   .box {
@@ -502,7 +658,7 @@ textarea {
   }
 
   .modalDialog > div {
-    margin: 5% auto;
+    margin: 2% auto;
   }
 
   input[type="text"], input[type="email"], input[type="number"], textarea {
@@ -528,5 +684,43 @@ textarea {
   }
 }
 
+/*landscape, up to tablet width*/
+@media only screen and (orientation: landscape) 
+and (max-width: 1020px) {
+  .slideModal > div {
+    height: 100vh;
+  }
 
+  .modalDialog > div {
+    width: 85%;
+    margin: 2% auto;
+  }
 
+  .right-arrow {
+    bottom: 5%;
+  }
+
+  .left-arrow {
+    bottom: 5%;
+  }
+}
+
+/*portrait, up to tablet*/
+@media only screen and (orientation: portrait)
+and (max-width: 780px){
+  .slideModal > div {
+    height: 100vh;
+  }
+
+  .photo1 {
+    background-image: url(../src/components/images/photo1-portrait.jpg);
+  }
+
+  .photo2 {
+    background-image: url(../src/components/images/photo2-portrait.jpg);
+  }
+
+  .photo3 {
+    background-image: url(../src/components/images/photo3-portrait.jpg);
+  }
+}

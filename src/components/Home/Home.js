@@ -1,6 +1,7 @@
 import React from 'react';
 import Countdown from '../Countdown/Countdown';
 import Form from '../Form/Form';
+import Slideshow from '../Slideshow/Slideshow';
 
 const amazon = require('../images/babyregistryamazon.png');
 const bbb = require('../images/buybuybabylogo.png');
@@ -25,7 +26,7 @@ export default class Home extends React.Component {
                         </div>
                         <div className='box-container box-container-with-content theme-color-2 col-4'>
                             <div className='inner-box-bg m2n1'></div>
-                            <div className='overlay overlay-faded'><a href='#event' className='higher-emphasis hvr-grow style-text'>Event</a></div>
+                            <div className='overlay overlay-faded'><a href='#event' className='more_link higher-emphasis hvr-grow style-text'>Event</a></div>
                         </div>
                         <div className='hidden-on-mobile box-container theme-color-3 col-4'>
                             <div className='inner-box-bg m3n1'></div>
@@ -33,17 +34,17 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className='column'>
-                        <div className='hidden-on-mobile box-container theme-color-3 col-4'>
+                        <div className='box-container box-container-with-content theme-color-3 col-4'>
                             <div className='inner-box-bg m1n2'></div>
-                            <div className='overlay-hide'></div>
+                            <div className='overlay overlay-faded'><a href='#photos' className='more_link higher-emphasis hvr-grow style-text'>Photos</a></div>
                         </div>
                         <div className='box-container box-container-with-content theme-color-1 col-4'>
                             <div className='inner-box-bg m2n2'></div>
-                            <div className='overlay overlay-faded'><a href='#registry' className='higher-emphasis hvr-grow style-text'>Registry</a></div>
+                            <div className='overlay overlay-faded'><a href='#registry' className='more_link higher-emphasis hvr-grow style-text'>Registry</a></div>
                         </div>
                         <div className='box-container box-container-with-content theme-color-2 col-4'>
                             <div className='inner-box-bg m3n2'></div>
-                            <div className='overlay overlay-faded'><a href='#rsvp' className='higher-emphasis hvr-grow style-text'>RSVP</a></div>
+                            <div className='overlay overlay-faded'><a href='#rsvp' className='more_link higher-emphasis hvr-grow style-text'>RSVP</a></div>
                         </div>
                     </div>
                     <div className='column'>
@@ -53,7 +54,7 @@ export default class Home extends React.Component {
                         </div>
                         <div className='box-container box-container-with-content theme-color-3 col-4'>
                             <div className='inner-box-bg m2n3'></div>
-                            <div className='overlay overlay-faded'><a href='#countdown' className='higher-emphasis hvr-grow style-text'>Countdown</a></div>
+                            <div className='overlay overlay-faded'><a href='#countdown' className='more_link higher-emphasis hvr-grow style-text'>Countdown</a></div>
                         </div>
                         <div className='hidden-on-mobile box-container theme-color-1 col-4'>
                             <div className='inner-box-bg m3n3'></div>
@@ -90,7 +91,7 @@ export default class Home extends React.Component {
                         <p className='section-text emphasis-text'>Santa Clara, Ca 95054</p>
                         <p className='attention-text section-text break-text'>Hosted by Olivia, Linda & Tulika</p>
                         <p className='break-text'>Drinks and light snacks provided</p>
-                        <a href='#rsvp' className='btn-submit hvr-grow'>RSVP</a>
+                        <a href='#rsvp' className='noselect btn-submit hvr-grow'>RSVP</a>
                         <p className='break-text'>Registered at <a href='https://www.amazon.com/baby-reg/animesh-agarwal-shiwani-gupta-october-2018-sanbruno/38M35EETLQPXV' rel='noopener noreferrer' target='_blank' title='Amazon Registry'>Amazon</a> and <a href='https://www.buybuybaby.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546350683&eventType=Baby&pwsurl=' rel='noopener noreferrer' target='_blank' title='buybuy Baby Registry'>buybuy Baby</a></p>
                     </div>
                 </div>
@@ -115,6 +116,13 @@ export default class Home extends React.Component {
                         <Countdown date={`${year}-10-18T00:00:00`} />
                         <p className='break-text'>on October 18th, 2018</p>
                         {/*Midnight of 17th to 18th Oct*/}
+                    </div>
+                </div>
+                <div id='photos' className='modalDialog slideModal'>
+                    <div className='theme-color-1'>
+                        <a href='#close' title='Close' className='close'>X</a>
+                        {/* <h2 className='hidden-on-mobile style-text higher-emphasis'>Photos</h2> */}
+                        <Slideshow />
                     </div>
                 </div>
             </div>

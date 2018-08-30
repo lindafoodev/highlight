@@ -19,10 +19,14 @@ Currently, it contains:
     * animation
   * Implemented Flexbox
   * Implemented Countdown
+  * Implemented Photo Carousel 
   * Utilized graphics software to customize image
+    * background colors for icons
+    * resize images (960px x 600px)
+    * add background layer to portrait photos to maintain image size (resize height)
 
 * Project Wishes
-  - [ ] Photo slideshow modal
+  - [x] Photo slideshow modal
   - [ ] Refactor and add additional tests
   - [ ] Make form more dynamic ie. when radio selected, only some fieldsets appear.
 
@@ -30,7 +34,7 @@ Currently, it contains:
   * Flat Square Animals - Andrey Bzhitskikh
   * React Countdown Tutorial - Kristin Baumann
   * Google Script Tutorial - Martin Hawksey
-
+  * Build An Image Slider With React & ES6 - Daniel Zuzevich
 
 # Scripts
 

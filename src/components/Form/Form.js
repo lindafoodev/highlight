@@ -7,7 +7,7 @@ class Form extends Component {
       <div>
         <form autoComplete="off" className="gform" method="POST" data-email="example@email.net"
           action="https://script.google.com/macros/s/AKfycbwounh2zqU4VbebFCj9dOKxAfLwAYQFcTAiStnHGaFV0Zq4oyGJ/exec">
-            {/* <!-- change the form action to your script url --> */}
+            {/* change the form action to your script url */}
 
             <div className='rsvp-message'>
                 <p className='break-text'>Drinks and light snacks provided</p>
@@ -72,13 +72,13 @@ class Form extends Component {
                 placeholder="Have any questions or comments..."></textarea>
               </fieldset>              
 
-              <Button class={'btn-submit hvr-grow button-success pure-button button-xlarge'} handleClick={() => ''} btnTxt={'Submit'}/>
+              <Button class={'noselect btn-submit hvr-grow button-success pure-button button-xlarge'} handleClick={() => ''} btnTxt={'Submit'}/>
             </div>
             <div className='notice-message'>
                 <p className='break-section'>If submission is successful, confirmation will be shown here.</p>
                 <p className='section-text'>Contact Linda at <a href="mailto:lindafoodev@gmail.com">lindafoodev@gmail.com</a> for any issues.</p>
             </div>
-            {/* <!-- Customise the Thankyou Message People See when they submit the form: --> */}
+            {/* Customise the Thankyou Message People See when they submit the form: */}
             <div className="thankyou_message" style={{display:'none'}}>
                 <h2><em>Thanks</em> for RSVPing!</h2>
                 <h3>We look forward to celebrating with you!</h3>
