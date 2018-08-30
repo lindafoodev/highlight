@@ -200,7 +200,7 @@ body {
   display: none;
 }
 
-/*----modal----*/
+/*----modal Dialog----*/
 .modalDialog {
   position: fixed;
   font-family: 'EB Garamond', serif;
@@ -504,16 +504,41 @@ textarea {
 }
 
 /*---- Slideshow ----*/
+/*----modal Slide----*/
+.modalSlide {
+  position: fixed;
+  font-family: 'EB Garamond', serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(236, 181, 98, 0.6); /*full screen faded out*/
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+  pointer-events: none;
+  max-height: 100vh; /*contain modal so scroll enabled if overflow outside of viewport*/
+  overflow-y: auto; /*contain modal so scroll enabled if overflow outside of viewport*/
+}
 
-.slideModal > div {
-  height: 45vh;
+.modalSlide:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalSlide > div {
+	width: 75%;
+	position: relative;
+  margin: 5% auto;
   border: #fff 2px solid;
   opacity: 1;
   text-align: center;
 }
 
 .slideshow {
-  height: 85%;
+  height: 100%;
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -629,12 +654,13 @@ i {
     width: 45%
   }
 
-  .slideModal > div {
-    height: 100vh;
+  .modalSlide > div {
+    width: 45%;
+    height: 85%;
   }
   
   .slideshow {
-    max-height: 85vh;
+    max-height: 100%;
   }
 
   .right-arrow, .left-arrow {
@@ -658,6 +684,10 @@ i {
   }
 
   .modalDialog > div {
+    margin: 2% auto;
+  }
+
+  .modalSlide > div {
     margin: 2% auto;
   }
 
@@ -687,13 +717,20 @@ i {
 /*landscape, up to tablet width*/
 @media only screen and (orientation: landscape) 
 and (max-width: 1020px) {
-  .slideModal > div {
-    height: 100vh;
-  }
-
   .modalDialog > div {
     width: 85%;
     margin: 2% auto;
+  }
+
+  .modalSlide > div {
+    height: 100vh;
+    width: 85%;
+    margin: 2% auto;
+  }
+
+  .slideshow {
+    height: 90%;
+    margin-top: 20px;
   }
 
   .right-arrow {
@@ -708,8 +745,17 @@ and (max-width: 1020px) {
 /*portrait, up to tablet*/
 @media only screen and (orientation: portrait)
 and (max-width: 780px){
-  .slideModal > div {
-    height: 100vh;
+  .modalSlide > div {
+    height: 85%;
+    width: 90%;
+  }
+
+  .left-arrow {
+    bottom: 15%;
+  }
+
+  .right-arrow {
+    bottom: 15%;
   }
 
   .photo1 {

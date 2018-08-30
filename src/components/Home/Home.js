@@ -10,7 +10,7 @@ export default class Home extends React.Component {
   render(){
     const currentDate = new Date();
     const year = (currentDate.getMonth() === 9 && currentDate.getDate() > 17) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
-    // if target date has passed, then current year is adjusted to calculate countdown properly 
+    // if target date has passed, then current year is adjusted to calculate countdown properly (countdown begins another cycle)
     // console.log(currentDate);
     // console.log(currentDate.getMonth());
     // console.log(currentDate.getFullYear());
@@ -103,8 +103,6 @@ export default class Home extends React.Component {
                         <p className='section-text emphasis-text'>Sunday, September 16th, 2018</p>
                         <p className='section-text emphasis-text'>1:00 pm to 5:00 pm</p>
                         <Form />
-                        {/* <p className='break-text'>We look forward to</p>
-                        <p className='section-text'>celebrating with you!</p> */}
                     </div>
                 </div>
                 <div id='countdown' className='modalDialog'>
@@ -118,10 +116,9 @@ export default class Home extends React.Component {
                         {/*Midnight of 17th to 18th Oct*/}
                     </div>
                 </div>
-                <div id='photos' className='modalDialog slideModal'>
+                <div id='photos' className='modalSlide'>
                     <div className='theme-color-1'>
                         <a href='#close' title='Close' className='close'>X</a>
-                        {/* <h2 className='hidden-on-mobile style-text higher-emphasis'>Photos</h2> */}
                         <Slideshow />
                     </div>
                 </div>
