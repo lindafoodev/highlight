@@ -6,7 +6,7 @@ Currently, it contains:
 * Baby Agarwal - a personalized single-page responsive landing page for a baby shower where users can view event details, shower registry, due date countdown, and RSVP. Serverless - RSVP data is auto-collected via Google Sheet API and confirmation auto-sent to email. 
   * Front-End, Serverless - JavaScript, React, HTML/CSS, Google Sheet API
 
-## Baby Agarwal - https://babyagarwal.netlify.com
+## Highlight Event - https://highlight-event.netlify.com/
 * Project Wins
   * Utilized Google Sheet API to auto-send an email and update a Google Sheet with RSVP attendee details once form submitted 
   * Pragmatic and quick shipment of features
